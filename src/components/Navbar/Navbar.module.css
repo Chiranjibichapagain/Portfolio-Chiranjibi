@@ -1,0 +1,34 @@
+.navList {
+  width: 97vw;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+}
+
+.items {
+  margin: 0em 0.8em;
+  padding: 2.1em 0em;
+  border-bottom: 2px solid rgba(250, 67, 0, 0);
+  text-decoration: none;
+  color: #dbebfa;
+}
+
+.items:hover {
+  border-bottom: 2px solid rgba(250, 67, 0, 0.842);
+}
+
+@media screen and (max-width: 600px) {
+  .navList {
+    font-size: 0.6em;
+  }
+  .items {
+    margin: 0em 0.5em;
+  }
+
+  .items:hover {
+    border-bottom: 2px solid rgba(250, 67, 0, 0);
+  }
+}

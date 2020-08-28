@@ -1,0 +1,25 @@
+.navbar {
+  width: 100vw;
+  max-height: 13vh;
+  background-color: #004d73;
+  padding: 1.2em 3em;
+  box-shadow: 0px 0px 5px black;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 4.5vw;
+  height: 8vh;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    max-height: 10vh;
+    padding: 1em 1.5em;
+  }
+  .logo {
+    width: 8vw;
+    height: 12vh;
+  }
+}
