@@ -5,7 +5,7 @@
   background-color: white;
   background-attachment: fixed;
   background-size: cover;
-  padding: 1em 28em;
+  padding: 1em 28em 10em 28em;
 }
 
 .heading {
@@ -17,4 +17,8 @@
   font-family: "Zilla Slab", serif;
   font-size: 1.4em;
   line-height: 1.5;
+}
+
+.cvDiv {
+  display: none;
 }

@@ -1,9 +1,13 @@
 import React from "react";
 
 import styles from "./About.module.css";
-import Button from "../About/About";
-
+import Button from "../Button/Button";
+import Cv from "../Cv/cv";
 const Main = () => {
+  const loadCV = () => {
+    return <Cv />;
+  };
+
   return (
     <div className={styles.main}>
       <h2 className={styles.heading}>About Me</h2>
@@ -33,6 +37,7 @@ const Main = () => {
         <br />
         Want to know more ? check out my CV.
       </p>
+      <Button text="CV" type="primary" handleClick={loadCV} />
     </div>
   );
 };
