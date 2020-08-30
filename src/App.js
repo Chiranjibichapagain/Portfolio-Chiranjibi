@@ -2,6 +2,8 @@ import React from "react";
 import "./styles/app.css";
 import Header from "./components/Header/Header";
 import Banner from "./components/Banner/Banner";
+import Footer from "./components/Footer/Footer";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -9,9 +11,10 @@ function App() {
       <Header />
       <main>
         <Banner />
+        <About />
       </main>
 
-      <footer>footer</footer>
+      <Footer />
     </body>
   );
 }

@@ -1,0 +1,20 @@
+.main {
+  width: 100vw;
+  /* height: 800px; */
+  background-image: url(../../assets/main.jpg);
+  background-color: white;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 1em 28em;
+}
+
+.heading {
+  font-family: Ubuntu, sans-serif;
+  margin-bottom: 1em;
+}
+
+.content {
+  font-family: "Zilla Slab", serif;
+  font-size: 1.4em;
+  line-height: 1.5;
+}

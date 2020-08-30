@@ -1,7 +1,111 @@
 .banner {
-  /* width: 100vw;
-  height: 80vh; */
-  /* background-image: url(../../assets/background-img.jpg);
+  width: 100vw;
+  height: 0vh;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover; */
+  background-size: cover;
+  color: #dbebfa;
+  padding: 4em 10em;
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+  letter-spacing: 0.1em;
+  animation: bannerMagic 0.5s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+.greetings {
+  margin-bottom: 1.5em;
+  font-size: 2em;
+  opacity: 0;
+  animation: greetingMagic 1s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+
+.intro {
+  margin-bottom: 2em;
+  font-size: 0.7em;
+  line-height: 1.5;
+  opacity: 0;
+  animation: introMagic 0.5s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+
+.welcome {
+  font-size: 1em;
+  font-weight: bold;
+  opacity: 0;
+  animation: welcomeMagic 0.5s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    max-height: 30vh;
+    padding: 1em 1.5em;
+  }
+
+  .greetings {
+    animation: none;
+    opacity: 1;
+    font-size: 0.9em;
+  }
+
+  .intro {
+    animation: none;
+    opacity: 1;
+    font-size: 0.6em;
+  }
+
+  .welcome {
+    animation: none;
+    opacity: 1;
+    font-size: 0.8em;
+  }
+}
+
+@keyframes greetingMagic {
+  from {
+    font-size: 2em;
+    opacity: 0;
+  }
+  to {
+    font-size: 2em;
+    opacity: 1;
+  }
+}
+
+@keyframes introMagic {
+  from {
+    font-size: 0.7em;
+    opacity: 0;
+  }
+  to {
+    font-size: 1em;
+    opacity: 1;
+  }
+}
+
+@keyframes welcomeMagic {
+  from {
+    font-size: 1em;
+    opacity: 0;
+  }
+  to {
+    font-size: 1.5em;
+    opacity: 1;
+  }
+}
+
+@keyframes bannerMagic {
+  from {
+    height: 0vh;
+  }
+  to {
+    height: 50vh;
+  }
 }

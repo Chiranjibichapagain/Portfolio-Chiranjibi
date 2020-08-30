@@ -33,17 +33,22 @@ const Banner = () => {
   };
 
   const divStyle = {
-    width: "100vw",
-    height: "80vh",
     backgroundColor: "#dbebfa",
     backgroundImage: `url(${getImg()})`,
-    backgroundAttachment: "fixed",
-    backgroundSize: "cover",
   };
 
   return (
-    <div style={divStyle}>
-      <h1>Hi!{getGreetings()} Good to see you.</h1>
+    <div style={divStyle} className={styles.banner}>
+      <h1 className={styles.greetings}>
+        Hi, {getGreetings()}! Good to see you.
+      </h1>
+      <p className={styles.intro}>
+        My name is Chiranjibi Chapagain.<br></br> I am a Junior Full Stack
+        Developer based in Helsinki, Finland.
+      </p>
+      <p className={styles.welcome}>
+        I warmly welcome you to my portfolio page.{" "}
+      </p>
     </div>
   );
 };
