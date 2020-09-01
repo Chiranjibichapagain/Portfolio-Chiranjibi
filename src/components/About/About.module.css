@@ -1,11 +1,10 @@
 .main {
   width: 100vw;
-  /* height: 800px; */
-  background-image: url(../../assets/main.jpg);
-  background-color: white;
-  background-attachment: fixed;
+  /* background-image: url(../../assets/main.jpg); */
+  background-color: rgb(192, 251, 255);
+  /* background-attachment: fixed; */
   background-size: cover;
-  padding: 1em 28em 10em 28em;
+  padding: 1em 28em 2em 28em;
 }
 
 .heading {
@@ -19,6 +18,10 @@
   line-height: 1.5;
 }
 
-.cvDiv {
-  display: none;
+.CV {
+  width: 50vw;
+  opacity: 0.9;
+  margin: 1em 0em;
+  border-radius: 1em;
+  border: 0.05em solid #004d73;
 }

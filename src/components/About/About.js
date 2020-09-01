@@ -1,11 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 
 import styles from "./About.module.css";
 import Button from "../Button/Button";
-import Cv from "../Cv/cv";
+import CV from "../../assets/cv.jpg";
 const Main = () => {
-  const loadCV = () => {
-    return <Cv />;
+  const [click, setclick] = useState("false");
+  const [view, setview] = useState("true");
+
+  const showItem = () => {
+    setclick("true");
+    setview("false");
+  };
+
+  const hideItem = () => {
+    setclick("false");
+    setview("true");
+  };
+
+  const hide = {
+    display: "none",
+  };
+
+  const show = {
+    display: "block",
+  };
+
+  const viewCvButtonStyle = () => {
+    if (view === "true") {
+      return show;
+    } else {
+      return hide;
+    }
+  };
+
+  const cvDivStyle = () => {
+    if (click === "false") {
+      return hide;
+    } else {
+      return show;
+    }
   };
 
   return (
@@ -37,7 +70,15 @@ const Main = () => {
         <br />
         Want to know more ? check out my CV.
       </p>
-      <Button text="CV" type="primary" handleClick={loadCV} />
+      <div style={viewCvButtonStyle()}>
+        <Button text="View CV" type="primary" handleClick={showItem} />
+      </div>
+
+      <div style={cvDivStyle()}>
+        <img src={CV} className={styles.CV} />
+        {/* <embed src={CV} width="700px" height="1000px" /> */}
+        <Button text="Hide CV" type="primary" handleClick={hideItem} />
+      </div>
     </div>
   );
 };
