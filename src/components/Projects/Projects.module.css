@@ -1,0 +1,9 @@
+.projectMain {
+  width: 100vw;
+  height: 500px;
+  background-image: url(../../assets/project.jpg);
+  background-color: rgb(192, 251, 255);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 2em 28em 5em 28em;
+}

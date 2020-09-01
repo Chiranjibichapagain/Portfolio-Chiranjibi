@@ -1,10 +1,10 @@
 import React from "react";
 
-import styles from "./Projects.module.csss";
+import styles from "./Projects.module.css";
 
 const Projects = () => {
   return (
-    <div>
+    <div className={styles.projectMain}>
       <h2>Projects</h2>
     </div>
   );
