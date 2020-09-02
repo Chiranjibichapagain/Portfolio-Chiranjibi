@@ -71,13 +71,13 @@ const Main = () => {
         Want to know more ? check out my CV.
       </p>
       <div style={viewCvButtonStyle()}>
-        <Button text="View CV" type="primary" handleClick={showItem} />
+        <Button text="view cv" type="primary" handleClick={showItem} />
       </div>
 
       <div style={cvDivStyle()}>
         <img src={CV} className={styles.CV} />
         {/* <embed src={CV} width="700px" height="1000px" /> */}
-        <Button text="Hide CV" type="primary" handleClick={hideItem} />
+        <Button text="hide cv" type="primary" handleClick={hideItem} />
       </div>
     </div>
   );

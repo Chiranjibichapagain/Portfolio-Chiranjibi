@@ -1,5 +1,20 @@
 .primary {
   width: 8vw;
+  height: 30px;
+  padding: 0.3em;
+  margin: 1em 0em;
+  border-style: none;
+  border-radius: 0.4em;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: #dbebfa;
+  cursor: pointer;
+  background-color: #007fbd;
+}
+
+.secondary {
+  width: 8vw;
   height: 4.5vh;
   padding: 0.5em;
   margin: 1em 0em;
@@ -10,5 +25,26 @@
   font-weight: bold;
   color: #dbebfa;
   cursor: pointer;
-  background-color: #007fbd;
+  background-color: #dbebfa;
+}
+
+.default {
+  width: 8vw;
+  height: 4.5vh;
+  padding: 0.5em;
+  margin: 1em 0em;
+  border-style: none;
+  border-radius: 0.4em;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: #dbebfa;
+  cursor: pointer;
+  background-color: #dbebfa;
+}
+
+@media screen and (max-width: 600px) {
+  .primary {
+    width: 30vw;
+  }
 }
