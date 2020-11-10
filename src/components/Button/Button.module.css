@@ -1,15 +1,17 @@
 .primary {
-  width: 8vw;
-  height: 30px;
-  padding: 0.3em;
+  width: 120px;
+  height: 40px;
+  padding-top:0.4em;
   margin: 1em 0em;
   border-style: none;
-  border-radius: 0.4em;
+  border-radius: 0.3em;
   text-align: center;
+  font-size: 1.3em;
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   color: #dbebfa;
   cursor: pointer;
+  letter-spacing: 2px;
   background-color: #007fbd;
 }
 
@@ -23,7 +25,7 @@
   text-align: center;
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
-  color: #dbebfa;
+  color: #001120;
   cursor: pointer;
   background-color: #dbebfa;
 }
@@ -40,7 +42,7 @@
   font-weight: bold;
   color: #dbebfa;
   cursor: pointer;
-  background-color: #dbebfa;
+  background-color: #00204b;
 }
 
 @media screen and (max-width: 600px) {

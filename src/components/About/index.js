@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
 import styles from "./About.module.css";
-import Button from "../Button/Button";
+import Button from "../Button";
 import CV from "../../assets/cv.jpg";
-const Main = () => {
+
+const About = () => {
   const [click, setclick] = useState("false");
   const [view, setview] = useState("true");
 
@@ -76,11 +77,10 @@ const Main = () => {
 
       <div style={cvDivStyle()}>
         <img src={CV} className={styles.CV} />
-        {/* <embed src={CV} width="700px" height="1000px" /> */}
         <Button text="hide cv" type="primary" handleClick={hideItem} />
       </div>
     </div>
   );
 };
 
-export default Main;
+export default About;

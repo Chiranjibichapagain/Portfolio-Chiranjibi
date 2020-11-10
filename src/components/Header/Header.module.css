@@ -11,6 +11,7 @@
 .logo {
   width: 4.5vw;
   height: 8vh;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {

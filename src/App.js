@@ -1,21 +1,18 @@
 import React from "react";
+
+import Routes from './routes'
+import Header from './components/Header'
+import Footer from './components/Footer'
 import "./styles/app.css";
-import Header from "./components/Header/Header";
-import Banner from "./components/Banner/Banner";
-import Footer from "./components/Footer/Footer";
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
+
 
 function App() {
   return (
     <body>
       <Header />
       <main>
-        <Banner />
-        <About />
-        <Projects />
+        <Routes/>
       </main>
-
       <Footer />
     </body>
   );

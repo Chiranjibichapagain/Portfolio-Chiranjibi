@@ -1,0 +1,21 @@
+.contactMain {
+  width: 100vw;
+  background-image: url(../../assets/phone.jpg);
+  background-color: rgb(192, 251, 255);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 2em 28em 5em 28em;
+}
+
+.heading {
+  font-family: Ubuntu, sans-serif;
+  margin-bottom: 1em;
+  letter-spacing: 3px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .projectMain {
+    padding: 2em;
+  }
+}

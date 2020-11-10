@@ -10,6 +10,8 @@
 .heading {
   font-family: Ubuntu, sans-serif;
   margin-bottom: 1em;
+  letter-spacing: 3px;
+
 }
 
 .content {
