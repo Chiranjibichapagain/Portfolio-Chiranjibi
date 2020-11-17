@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import {useHistory} from 'react-router-dom'
 
 import styles from "./About.module.css";
 import Button from "../Button";
 import CV from "../../assets/cv.jpg";
 
 const About = () => {
+  const history= useHistory()
   const [click, setclick] = useState("false");
   const [view, setview] = useState("true");
 
@@ -41,6 +43,11 @@ const About = () => {
       return show;
     }
   };
+  
+  const toCv = () => {
+    history.push('/cv')
+  }
+
 
   return (
     <div className={styles.main}>
@@ -72,13 +79,13 @@ const About = () => {
         Want to know more ? check out my CV.
       </p>
       <div style={viewCvButtonStyle()}>
-        <Button text="view cv" type="primary" handleClick={showItem} />
+        <Button text="view cv" type="primary" handleClick={toCv} />
       </div>
 
-      <div style={cvDivStyle()}>
+      {/* <div style={cvDivStyle()}>
         <img src={CV} className={styles.CV} />
-        <Button text="hide cv" type="primary" handleClick={hideItem} />
-      </div>
+        <Button text="hide cv" type="primary" handleClick={toCv} />
+      </div> */}
     </div>
   );
 };

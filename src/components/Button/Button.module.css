@@ -4,7 +4,7 @@
   padding-top:0.4em;
   margin: 1em 0em;
   border-style: none;
-  border-radius: 0.3em;
+  border-radius: 0.2em;
   text-align: center;
   font-size: 1.3em;
   font-family: "Ubuntu", sans-serif;
@@ -16,8 +16,8 @@
 }
 
 .secondary {
-  width: 8vw;
-  height: 4.5vh;
+  width: 120px;
+  height: 40px;
   padding: 0.5em;
   margin: 1em 0em;
   border-style: none;
@@ -31,8 +31,8 @@
 }
 
 .default {
-  width: 8vw;
-  height: 4.5vh;
+  width: 120px;
+  height: 40px;
   padding: 0.5em;
   margin: 1em 0em;
   border-style: none;

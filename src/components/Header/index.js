@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <div className={styles.navbar}>
       <img onClick={goHome} className={styles.logo} src={logo} />
-      <Navbar />
+      {/* <Navbar /> */}
     </div>
   );
 };
