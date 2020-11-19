@@ -1,18 +1,16 @@
 .primary {
-  width: 120px;
-  height: 40px;
-  padding-top:0.4em;
-  margin: 1em 0em;
-  border-style: none;
-  border-radius: 0.2em;
-  text-align: center;
-  font-size: 1.3em;
+  width: 100px;
+  height: 30px;
+  border:none;
+  border-radius: 3px;
+  font-size: 1em;
   font-family: "Ubuntu", sans-serif;
-  font-weight: bold;
   color: #dbebfa;
   cursor: pointer;
   letter-spacing: 2px;
   background-color: #007fbd;
+  transition: 0.3s ease-in-out;
+
 }
 
 .secondary {
@@ -28,6 +26,7 @@
   color: #001120;
   cursor: pointer;
   background-color: #dbebfa;
+  transition: 0.3s ease-in-out;
 }
 
 .default {
@@ -43,6 +42,12 @@
   color: #dbebfa;
   cursor: pointer;
   background-color: #00204b;
+}
+
+.primary:hover {
+  background-color: white;
+  border:1px solid #007fbd;
+  color: #2a2a2a
 }
 
 @media screen and (max-width: 600px) {
