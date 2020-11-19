@@ -7,44 +7,9 @@ import CV from "../../assets/cv.jpg";
 
 const About = () => {
   const history= useHistory()
-  const [click, setclick] = useState("false");
-  const [view, setview] = useState("true");
-
-  const showItem = () => {
-    setclick("true");
-    setview("false");
-  };
-
-  const hideItem = () => {
-    setclick("false");
-    setview("true");
-  };
-
-  const hide = {
-    display: "none",
-  };
-
-  const show = {
-    display: "block",
-  };
-
-  const viewCvButtonStyle = () => {
-    if (view === "true") {
-      return show;
-    } else {
-      return hide;
-    }
-  };
-
-  const cvDivStyle = () => {
-    if (click === "false") {
-      return hide;
-    } else {
-      return show;
-    }
-  };
   
   const toCv = () => {
+    console.log('cv clicked!!')
     history.push('/cv')
   }
 
@@ -78,14 +43,7 @@ const About = () => {
         <br />
         Want to know more ? check out my CV.
       </p>
-      <div style={viewCvButtonStyle()}>
         <Button text="view cv" type="primary" handleClick={toCv} />
-      </div>
-
-      {/* <div style={cvDivStyle()}>
-        <img src={CV} className={styles.CV} />
-        <Button text="hide cv" type="primary" handleClick={toCv} />
-      </div> */}
     </div>
   );
 };
