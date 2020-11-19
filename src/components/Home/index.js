@@ -14,14 +14,20 @@ function Home() {
     <body>
       <main>
         <div className={styles.nav}>
-          <div className={styles.navItems}><Link>About Me</Link> </div>
-          <div className={styles.navItems}><Link>Projects</Link></div>
-          <div className={styles.navItems}><Link>Contact</Link></div>
+          <div className={styles.navItems}><Link to="about" spy={true} smooth={true} >About Me</Link> </div>
+          <div className={styles.navItems}><Link to="projects" spy={true} smooth={true}>Projects</Link></div>
+          <div className={styles.navItems}><Link to="contact" spy={true} smooth={true}>Contact</Link></div>
         </div>
         <Banner />
+        <div id="about">
         <About />
+        </div>
+        <div id="projects">
         <Projects />
-        <Contact/>
+        </div>
+        <div id="contact">
+        <Contact />
+        </div>
       </main>
       <Footer />
     </body>
