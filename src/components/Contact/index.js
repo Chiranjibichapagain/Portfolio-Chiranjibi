@@ -23,7 +23,7 @@ const Contact = () => {
           <Input type="text" placeholder="E.g. example@example.com" labelText={"Email"} />
           <div className={styles.inputDiv}>
           <label className={styles.label} >Your Message</label>
-          <textarea className={styles.input} cols="30" rows="7" />
+          <textarea placeholder="E.g. Your message to me" className={styles.input} cols="30" rows="7" />
           </div>
           <div className={styles.btnDiv} >
           <Button text="Send" type="primary" onClick={()=>handleClick} />

@@ -1,3 +1,23 @@
+.main {
+ width: 100vw;
+  padding: 2em 20em 5em 20em;
+  font-family: Ubuntu, sans-serif;
+  letter-spacing: 2px;
+  background-image: url(../../assets/mouse.jpg);
+  background-color: rgb(192, 251, 255);
+  background-attachment: fixed;
+  background-size: cover;
+
+}
 .heading {
-    color:red
+    color:#2a2a2a;
+    text-align: center;
+    
+}
+
+.projects {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
