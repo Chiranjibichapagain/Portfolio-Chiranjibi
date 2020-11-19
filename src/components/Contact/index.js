@@ -3,6 +3,7 @@ import React from "react";
 import Input from '../Input/'
 import Button from '../Button'
 import styles from "./Contact.module.css";
+import classes from "./Contact.module.css";
 
 
 const Contact = () => {
@@ -15,7 +16,7 @@ const Contact = () => {
     <div className={styles.contactMain}>
       <div className={styles.formBody}>
       <h2 className={styles.heading}>Contact Form</h2>
-        <h5>Please Fill in the form to send me message or feedback.</h5>
+        <h5 className={classes.intro}>Please Fill in the form to send me message or feedback.</h5>
         <form className={styles.form}>
           <Input type="text" placeholder="E.g. Your Name" labelText={"First Name"} />
           <Input type="text" placeholder="E.g. Your Surname" labelText={"Last Name"} />
