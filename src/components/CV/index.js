@@ -1,12 +1,15 @@
 import React from 'react'
 
-import Nav from '../Navbar/Navbar'
+import Education from '../Education'
 import styles from './Ux.module.css'
 
 const CV =()=> {
     return (
-        <div>
-            <h1 className={styles.heading}>This is CV page</h1>  
+        <div className={styles.main}>
+            <h1 className={styles.heading}>Curriculum Vitae</h1>
+            <div>
+            <Education/>
+            </div>
         </div>
     )
 }
