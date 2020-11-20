@@ -4,7 +4,7 @@
   background-color: rgb(192, 251, 255);
   background-attachment: fixed;
   background-size: cover;
-  padding: 2em 23em 5em 23em;
+  padding: 2em 20em 5em 20em;
 }
 
 
@@ -13,4 +13,32 @@
   margin-bottom: 1em;
   letter-spacing: 3px;
   text-align: center;
+}
+
+.education{
+    padding:10px 50px;
+    background-color: #b97b5c;
+    border-radius: 10px;
+    
+}
+
+.titleDiv {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.title {
+}
+
+.down {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }
