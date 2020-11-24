@@ -5,6 +5,8 @@
   background-attachment: fixed;
   background-size: cover;
   padding: 2em 20em 5em 20em;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -15,10 +17,11 @@
   text-align: center;
 }
 
-.education{
+.section{
     padding:10px 50px;
     background-color: #b97b5c;
     border-radius: 10px;
+    margin-bottom: 15px;
     
 }
 
