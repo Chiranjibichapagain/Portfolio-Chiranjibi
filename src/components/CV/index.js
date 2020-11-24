@@ -3,6 +3,7 @@ import React, {useState} from 'react'
 import Education from '../Education'
 import Work from '../Work'
 import Trainings from '../Trainings'
+import Skills from '../Skills'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown} from '@fortawesome/free-solid-svg-icons'
 import styles from './Ux.module.css'
@@ -11,6 +12,7 @@ const CV = () => {
     const [edu, setEdu] = useState(false)
     const [work, setWork] = useState(false)
     const [trainings, setTrainings] = useState(false)
+    const [skills, setSkills] = useState(false)
 
     const handleEdu = () => {
         if (edu === false) {
@@ -31,6 +33,13 @@ const CV = () => {
             setTrainings(true)
         } else {
             setTrainings(false)
+        }
+    }
+    const handleSkills = () => {
+        if (skills === false) {
+            setSkills(true)
+        } else {
+            setSkills(false)
         }
     }
 
@@ -64,6 +73,16 @@ const CV = () => {
                     <FontAwesomeIcon  onClick={handleTrainings} className={styles.down} icon={faAngleDown} />
                 </div>
                 <div className={trainings===false?styles.hide:styles.show}>
+                    <Trainings/>
+                </div>
+            </div>
+
+            <div className={styles.section}>
+                <div className={styles.titleDiv}>
+                    <h2 className={styles.title}>Skills</h2>
+                    <FontAwesomeIcon  onClick={handleSkills} className={styles.down} icon={faAngleDown} />
+                </div>
+                <div className={skills===false?styles.hide:styles.show}>
                     <Trainings/>
                 </div>
             </div>
