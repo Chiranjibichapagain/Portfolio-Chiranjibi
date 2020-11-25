@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 
+import cvData from '../../data'
 import Education from '../Education'
 import Work from '../Work'
 import Trainings from '../Trainings'
@@ -13,6 +14,8 @@ const CV = () => {
     const [work, setWork] = useState(false)
     const [trainings, setTrainings] = useState(false)
     const [skills, setSkills] = useState(false)
+
+    console.log('xxx', cvData)
 
     const handleEdu = () => {
         if (edu === false) {
