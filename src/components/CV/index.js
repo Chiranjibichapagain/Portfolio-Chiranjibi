@@ -55,10 +55,9 @@ const CV = () => {
                     <FontAwesomeIcon  onClick={handleEdu} className={styles.down} icon={faAngleDown} />
                 </div>
                 <div className={edu === false ? styles.hide : styles.show}>
-                    {cvData.education.map((item) => {
-                        <p>{item.title}</p>
-                    })}
-                    {/* <Education degree={item.degree} title={item.title} institute={item.institute} year={item.year} courses={item.courses} /> */}
+                    {cvData.education.map((item) => (
+                    <Education degree={item.degree} title={item.title} institute={item.institute} year={item.year} courses={item.courses} />
+                    ))}
                 </div>
             </div>
 
