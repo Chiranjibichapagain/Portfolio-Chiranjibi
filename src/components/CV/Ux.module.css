@@ -19,12 +19,15 @@
 }
 
 .section{
-    padding:10px 50px;
-    background-color: #b97b5c;
+    padding:15px 12px;
+    background-color: #dedede;
     border-radius: 10px;
     margin-bottom: 15px;
-    box-shadow: 0px 0px 3px black;
-    
+    box-shadow: 0px 0px 3px rgb(44, 44, 44);
+    transition: 0.3s ease-in-out;
+}
+.section:hover {
+    box-shadow: 0px 0px 1px rgb(44, 44, 44);
 }
 
 .titleDiv {
@@ -34,6 +37,9 @@
 }
 
 .title {
+    columns: #2a2a2a;
+    font-family: Ubuntu, sans-serif;
+
 }
 
 .down {

@@ -48,7 +48,7 @@ const CV = () => {
             <h1 className={styles.heading}>Curriculum Vitae</h1>
             <div className={styles.section}>
                 <div className={styles.titleDiv}>
-                    <h2 className={styles.title}>Education</h2>
+                    <h3 className={styles.title}>Education</h3>
                     <FontAwesomeIcon  onClick={handleEdu} className={styles.down} icon={faAngleDown} />
                 </div>
                 <div className={edu===false?styles.hide:styles.show}>
@@ -59,7 +59,7 @@ const CV = () => {
 
             <div className={styles.section}>
                 <div className={styles.titleDiv}>
-                    <h2 className={styles.title}>Work Experiences</h2>
+                    <h3 className={styles.title}>Work Experiences</h3>
                     <FontAwesomeIcon  onClick={handleWork} className={styles.down} icon={faAngleDown} />
                 </div>
                 <div className={work===false?styles.hide:styles.show}>
@@ -69,7 +69,7 @@ const CV = () => {
             
             <div className={styles.section}>
                 <div className={styles.titleDiv}>
-                    <h2 className={styles.title}>Trainings and Certifications</h2>
+                    <h3 className={styles.title}>Trainings and Certifications</h3>
                     <FontAwesomeIcon  onClick={handleTrainings} className={styles.down} icon={faAngleDown} />
                 </div>
                 <div className={trainings===false?styles.hide:styles.show}>
@@ -79,7 +79,7 @@ const CV = () => {
 
             <div className={styles.section}>
                 <div className={styles.titleDiv}>
-                    <h2 className={styles.title}>Skills</h2>
+                    <h3 className={styles.title}>Skills</h3>
                     <FontAwesomeIcon  onClick={handleSkills} className={styles.down} icon={faAngleDown} />
                 </div>
                 <div className={skills===false?styles.hide:styles.show}>
