@@ -4,48 +4,37 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUniversity } from '@fortawesome/free-solid-svg-icons'
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 import { faListUl } from '@fortawesome/free-solid-svg-icons'
+import { faSpaceShuttle } from '@fortawesome/free-solid-svg-icons'
+import { faBuilding } from '@fortawesome/free-solid-svg-icons'
+import { faHandPointRight } from '@fortawesome/free-solid-svg-icons'
+
 import styles from './Work.module.css'
 
-const Work=()=> {
+const Work=({title, company, location, date, tasks})=> {
     return (
         <div>
 
         <div className={styles.main}>
             <div className={styles.titleItem}>
-                <FontAwesomeIcon className={styles.icon, styles.bIcon} icon={faGraduationCap} />
-                <p className={ styles.bText}>Master's Degree | Innovative Governance and Public Management</p>
+                <FontAwesomeIcon className={styles.icon, styles.bIcon} icon={faSpaceShuttle} />
+                    <p className={styles.bText}>{title}</p>
             </div>
 
             <div className={styles.item}>
-                <FontAwesomeIcon className={styles.icon} icon={faUniversity} />
-                <p className={styles.text}>Tampere University (2017 - 2019)</p>
+                <FontAwesomeIcon className={styles.icon} icon={faBuilding} />
+                    <p className={styles.text}>{`${company} | ${location} | ${date}`}</p>
             </div>
-
-            <div className={styles.item}>
-                <FontAwesomeIcon className={styles.icon} icon={faListUl} />
-                <p className={styles.courses}>Design Thinking, innovations and ecosystems, Organizational change and change management,
-                    Governance, Leadership in public organizations, Industrial Development </p>
+            <hr/>
+            <div className={styles.tasks}>
+                    {tasks.map(items => (
+                        <li className={styles.list}>
+                                <FontAwesomeIcon className={styles.icon} icon={faHandPointRight} />
+                                <p className={styles.courses}>{items}</p>
+                            </li>
+                ))}
             </div>
         </div>
             
-        <div className={styles.main}>
-            <div className={styles.titleItem}>
-                <FontAwesomeIcon className={styles.icon, styles.bIcon} icon={faGraduationCap} />
-                <p className={ styles.bText}>Master's Degree | Innovative Governance and Public Management</p>
-            </div>
-
-            <div className={styles.item}>
-                <FontAwesomeIcon className={styles.icon} icon={faUniversity} />
-                <p className={styles.text}>Tampere University (2017 - 2019)</p>
-            </div>
-
-            <div className={styles.item}>
-                <FontAwesomeIcon className={styles.icon} icon={faListUl} />
-                <p className={styles.courses}>Design Thinking, innovations and ecosystems, Organizational change and change management,
-                    Governance, Leadership in public organizations, Industrial Development </p>
-            </div>
-        </div>
-        
         </div>
     )
 }

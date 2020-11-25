@@ -67,7 +67,9 @@ const CV = () => {
                     <FontAwesomeIcon  onClick={handleWork} className={styles.down} icon={faAngleDown} />
                 </div>
                 <div className={work===false?styles.hide:styles.show}>
-                    <Work/>
+                    {cvData.workExperiences.map((item) => (
+                    <Work title={item.title} company={item.company} location={item.location} date={item.date} tasks={item.tasks} />
+                    ))}
                 </div>
             </div>
             

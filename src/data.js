@@ -46,7 +46,7 @@ const cv = {
             date: "December 2019 - June 2020",
             tasks: [
                 "Conducted research on the topic of user exprience.",
-                "Completed customer journey mapping for various projects.•",
+                "Completed customer journey mapping for various projects.",
                 "Developed wire frames and prototypes by using Figma.",
                 "Collaborated with other developers when developing the aforementioned prototypes."
             ]
