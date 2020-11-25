@@ -1,5 +1,6 @@
 .main {
   width: 100vw;
+  height:100vh;
   background-image: url(../../assets/cv-back.jpg);
   background-color: rgb(192, 251, 255);
   background-attachment: fixed;
