@@ -11,7 +11,7 @@ import styles from "./Home.module.css";
 
 function Home() {
   return (
-    <body>
+    <div>
       <main>
         <div className={styles.nav}>
           <div className={styles.navItems}><Link to="about" spy={true} smooth={true} >About Me</Link> </div>
@@ -30,7 +30,7 @@ function Home() {
         </div>
       </main>
       <Footer />
-    </body>
+    </div>
   );
 }
 

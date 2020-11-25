@@ -54,10 +54,12 @@ const CV = () => {
                     <h3 className={styles.title}>Education</h3>
                     <FontAwesomeIcon  onClick={handleEdu} className={styles.down} icon={faAngleDown} />
                 </div>
-                <div className={edu===false?styles.hide:styles.show}>
-                    <Education />
+                <div className={edu === false ? styles.hide : styles.show}>
+                    {cvData.education.map((item) => {
+                        <p>{item.title}</p>
+                    })}
+                    {/* <Education degree={item.degree} title={item.title} institute={item.institute} year={item.year} courses={item.courses} /> */}
                 </div>
-                 
             </div>
 
             <div className={styles.section}>

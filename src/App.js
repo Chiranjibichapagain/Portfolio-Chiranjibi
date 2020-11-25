@@ -13,15 +13,15 @@ function App() {
     history.push('/')
   }
   return (
-    <body>
+    <div>
       <div className="navDiv">
-      <img onClick={goHome} className="logo" src={logo} alt="logo" />
+        <img onClick={goHome} className="logo" src={logo} alt="logo" />
       </div>
       <main>
         <Routes/>
       </main>
       <Footer />
-    </body>
+    </div>
   );
 }
 
