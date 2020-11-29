@@ -8,14 +8,14 @@ import Skills from '../Skills'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown} from '@fortawesome/free-solid-svg-icons'
 import styles from './Ux.module.css'
+import classes from './Ux.module.css'
 
 const CV = () => {
-    const [edu, setEdu] = useState(false)
+    const [edu, setEdu] = useState(true)
     const [work, setWork] = useState(false)
     const [trainings, setTrainings] = useState(false)
     const [skills, setSkills] = useState(false)
 
-    console.log('xxx', cvData)
 
     const handleEdu = () => {
         if (edu === false) {
@@ -49,49 +49,48 @@ const CV = () => {
     return (
         <div className={styles.main}>
             <h1 className={styles.heading}>Curriculum Vitae</h1>
-            <div className={styles.section}>
-                <div className={styles.titleDiv}>
-                    <h3 className={styles.title}>Education</h3>
-                    <FontAwesomeIcon  onClick={handleEdu} className={styles.down} icon={faAngleDown} />
+            <div className={styles.sections}>
+
+                <div onClick={handleEdu} className={edu === false ? styles.section : styles.sectionSelected}>
+                    <p>Education </p>
                 </div>
+                <div onClick={handleEdu} className={edu === false ? styles.section : styles.sectionSelected}>
+                    <p>Work Experiences </p>
+                </div>
+                <div onClick={handleEdu} className={edu === false ? styles.section : styles.sectionSelected}>
+                    <p>Trainings </p>
+                </div>
+                <div onClick={handleEdu} className={edu === false ? styles.section : styles.sectionSelected}>
+                    <p>Skills </p>
+                </div>
+            </div>
+
+            <div className={styles.detailView}>
                 <div className={edu === false ? styles.hide : styles.show}>
+                    <h3 className={styles.title}>Education</h3>
                     {cvData.education.map((item) => (
                     <Education degree={item.degree} title={item.title} institute={item.institute} year={item.year} courses={item.courses} />
                     ))}
                 </div>
-            </div>
 
-            <div className={styles.section}>
-                <div className={styles.titleDiv}>
-                    <h3 className={styles.title}>Work Experiences</h3>
-                    <FontAwesomeIcon  onClick={handleWork} className={styles.down} icon={faAngleDown} />
-                </div>
                 <div className={work===false?styles.hide:styles.show}>
+                    <h3 className={styles.title}>Work Experiences</h3>
                     {cvData.workExperiences.map((item) => (
                     <Work title={item.title} company={item.company} location={item.location} date={item.date} tasks={item.tasks} />
                     ))}
                 </div>
-            </div>
-            
-            <div className={styles.section}>
-                <div className={styles.titleDiv}>
-                    <h3 className={styles.title}>Trainings and Certifications</h3>
-                    <FontAwesomeIcon  onClick={handleTrainings} className={styles.down} icon={faAngleDown} />
-                </div>
+
                 <div className={trainings===false?styles.hide:styles.show}>
+                    <h3 className={styles.title}>Trainings and Certifications</h3>
+                    <Trainings/>
+                </div>
+               
+                <div className={skills===false?styles.hide:styles.show}>
+                    <h3 className={styles.title}>Skills</h3>
                     <Trainings/>
                 </div>
             </div>
 
-            <div className={styles.section}>
-                <div className={styles.titleDiv}>
-                    <h3 className={styles.title}>Skills</h3>
-                    <FontAwesomeIcon  onClick={handleSkills} className={styles.down} icon={faAngleDown} />
-                </div>
-                <div className={skills===false?styles.hide:styles.show}>
-                    <Trainings/>
-                </div>
-            </div>
         </div>
     )
 }
