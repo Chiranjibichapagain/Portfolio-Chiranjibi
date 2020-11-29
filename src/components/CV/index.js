@@ -20,6 +20,9 @@ const CV = () => {
     const handleEdu = () => {
         if (edu === false) {
             setEdu(true)
+            setWork(false)
+            setTrainings(false)
+            setSkills(false)
         } else {
             setEdu(false)
         }
@@ -27,6 +30,9 @@ const CV = () => {
     const handleWork = () => {
         if (work === false) {
             setWork(true)
+            setEdu(false)
+            setTrainings(false)
+            setSkills(false)
         } else {
             setWork(false)
         }
@@ -34,6 +40,9 @@ const CV = () => {
     const handleTrainings = () => {
         if (trainings === false) {
             setTrainings(true)
+            setEdu(false)
+            setWork(false)
+            setSkills(false)
         } else {
             setTrainings(false)
         }
@@ -41,6 +50,9 @@ const CV = () => {
     const handleSkills = () => {
         if (skills === false) {
             setSkills(true)
+            setEdu(false)
+            setWork(false)
+            setTrainings(false)
         } else {
             setSkills(false)
         }
@@ -54,18 +66,19 @@ const CV = () => {
                 <div onClick={handleEdu} className={edu === false ? styles.section : styles.sectionSelected}>
                     <p>Education </p>
                 </div>
-                <div onClick={handleEdu} className={edu === false ? styles.section : styles.sectionSelected}>
+                <div onClick={handleWork} className={work === false ? styles.section : styles.sectionSelected}>
                     <p>Work Experiences </p>
                 </div>
-                <div onClick={handleEdu} className={edu === false ? styles.section : styles.sectionSelected}>
+                <div onClick={handleTrainings} className={trainings === false ? styles.section : styles.sectionSelected}>
                     <p>Trainings </p>
                 </div>
-                <div onClick={handleEdu} className={edu === false ? styles.section : styles.sectionSelected}>
+                <div onClick={handleSkills} className={skills === false ? styles.section : styles.sectionSelected}>
                     <p>Skills </p>
                 </div>
             </div>
 
             <div className={styles.detailView}>
+                <hr/>
                 <div className={edu === false ? styles.hide : styles.show}>
                     <h3 className={styles.title}>Education</h3>
                     {cvData.education.map((item) => (
