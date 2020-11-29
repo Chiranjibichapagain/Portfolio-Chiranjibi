@@ -151,14 +151,14 @@ const cv = {
     trainings: [
         {
             title: "Full-stack Open",
-            Institute: "University of Helsinki, Open University",
+            institute: "University of Helsinki, Open University",
             date: "2020",
             subjects:"React, Redux, Express.js, Node.js, Jest, Cypress, MondoDB, TypeScript"
         },
 
         {
             title: "EU-Aid Volunteers Initiative",
-            Institute: "Austrian study center for peace and conflict resolutions, Austria",
+            institute: "Austrian study center for peace and conflict resolutions, Austria",
             date: "2019",
             subjects:"EU institutions, Humanitarian assistance, International Humanitarian law, physical and psychological first aid, SAFE, Project Management, Security and First Aid simulation exercise"
         },

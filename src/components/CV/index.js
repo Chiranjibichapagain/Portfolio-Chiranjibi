@@ -95,7 +95,9 @@ const CV = () => {
 
                 <div className={trainings===false?styles.hide:styles.show}>
                     <h3 className={styles.title}>Trainings and Certifications</h3>
-                    <Trainings/>
+                    {cvData.trainings.map((item) => (
+                    <Trainings title={item.title} institute={item.institute} date={item.date} subjects={item.subjects} />
+                    ))}
                 </div>
                
                 <div className={skills===false?styles.hide:styles.show}>
