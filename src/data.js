@@ -120,12 +120,12 @@ const cv = {
             },
 
             {
-                stack: "Design and Graphics",
+                stack: "Design, Graphics",
                 techs:"Adobe Photoshop, Adobe Illustrator, Adobe premiere Pro, Adobe XD, Figma"
             },
 
             {
-                stack: "Project Management",
+                stack: "Projects",
                 techs:"Design Thinking, Servive Design, Scrum, Github Project Management"
             }
         ],

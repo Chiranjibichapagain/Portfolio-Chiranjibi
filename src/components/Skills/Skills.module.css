@@ -16,22 +16,31 @@
 }
 
 .titleItem{
+    width:200px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    width:250px;
-    height:100%;
-    border-right: 1.5px solid grey;
 }
 
 
 .icon {
     margin: 7px;
-    font-size: 20px;
+    font-size: 30px;
     color:rgb(56, 149, 255)
+}
+.icon2 {
+    margin: 7px;
+    font-size: 30px;
+    color:rgb(102, 0, 133)
+}
+.icon3 {
+    margin: 7px;
+    font-size: 30px;
+    color:rgb(216, 35, 3)
 }
 
 .bIcon {
-    margin-right: 15px;
+    margin: 15px;
     font-size: 40px;
     color:rgb(255, 86, 56);
 }
@@ -43,20 +52,33 @@
     font-weight: bold;
     font-family: Ubuntu, sans-serif;
     padding-bottom: 10px;
+    color:#2a2a2a;
+}
+.text {
+    font-size: 18px;
+    font-family: Ubuntu, sans-serif;
+    padding-top: 5px;
+    color:#2a2a2a;
 }
 
 .techs {
+    width:75%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
     padding: 10px 20px;
+    border-left: 2px solid rgb(126, 126, 126);
+
 }
 
 .tech {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 15px;
+    margin: 15px 20px;
 
+}
+.img {
+    width: 30px;
+    height: 30px;
+    margin: 7px;
 }
