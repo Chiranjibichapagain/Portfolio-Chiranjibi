@@ -102,7 +102,12 @@ const CV = () => {
                
                 <div className={skills===false?styles.hide:styles.show}>
                     <h3 className={styles.title}>Skills</h3>
-                    <Trainings/>
+                   {cvData.skills.tech.map((item) => (
+                    <Skills stack={item.stack} techs= {item.techs} />
+                    ))}
+                   {cvData.skills.language.map((item) => (
+                    <Skills title={item.title} institute={item.institute} date={item.date} subjects={item.subjects} />
+                    ))}
                 </div>
             </div>
 

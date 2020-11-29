@@ -1,51 +1,55 @@
 import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUniversity } from '@fortawesome/free-solid-svg-icons'
-import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
-import { faListUl } from '@fortawesome/free-solid-svg-icons'
+import { faDesktop } from '@fortawesome/free-solid-svg-icons'
 import styles from './Skills.module.css'
+import classes from './Skills.module.css'
 
-const Skills=()=> {
+const Skills=({stack, techs})=> {
     return (
-        <div>
-
         <div className={styles.main}>
             <div className={styles.titleItem}>
-                <FontAwesomeIcon className={styles.icon, styles.bIcon} icon={faGraduationCap} />
-                <p className={ styles.bText}>Master's Degree | Innovative Governance and Public Management</p>
+                <FontAwesomeIcon className={styles.icon, styles.bIcon} icon={faDesktop} />
+                    <p className={styles.bText}>{stack}</p>
             </div>
-
-            <div className={styles.item}>
-                <FontAwesomeIcon className={styles.icon} icon={faUniversity} />
-                <p className={styles.text}>Tampere University (2017 - 2019)</p>
+            <div className={styles.techs}>
+                <div className={styles.tech}>
+                    <FontAwesomeIcon className={styles.icon, styles.icon} icon={faDesktop} />
+                    <h5>UX Design</h5>    
+                </div>
+                <div className={styles.tech}>
+                    <FontAwesomeIcon className={styles.icon, styles.icon} icon={faDesktop} />
+                    <h5>UX Design</h5>    
+                </div>
+                <div className={styles.tech}>
+                    <FontAwesomeIcon className={styles.icon, styles.icon} icon={faDesktop} />
+                    <h5>UX Design</h5>    
+                </div>
+                <div className={styles.tech}>
+                    <FontAwesomeIcon className={styles.icon, styles.icon} icon={faDesktop} />
+                    <h5>UX Design</h5>    
+                </div>
+                <div className={styles.tech}>
+                    <FontAwesomeIcon className={styles.icon, styles.icon} icon={faDesktop} />
+                    <h5>UX Design</h5>    
+                </div>
+                <div className={styles.tech}>
+                    <FontAwesomeIcon className={styles.icon, styles.icon} icon={faDesktop} />
+                    <h5>UX Design</h5>    
+                </div>
+                <div className={styles.tech}>
+                    <FontAwesomeIcon className={styles.icon, styles.icon} icon={faDesktop} />
+                    <h5>UX Design</h5>    
+                </div>
+                <div className={styles.tech}>
+                    <FontAwesomeIcon className={styles.icon, styles.icon} icon={faDesktop} />
+                    <h5>UX Design</h5>    
+                </div>
+                <div className={styles.tech}>
+                    <FontAwesomeIcon className={styles.icon, styles.icon} icon={faDesktop} />
+                    <h5>UX Design</h5>    
+                </div>
             </div>
-
-            <div className={styles.item}>
-                <FontAwesomeIcon className={styles.icon} icon={faListUl} />
-                <p className={styles.courses}>Design Thinking, innovations and ecosystems, Organizational change and change management,
-                    Governance, Leadership in public organizations, Industrial Development </p>
-            </div>
-        </div>
-            
-        <div className={styles.main}>
-            <div className={styles.titleItem}>
-                <FontAwesomeIcon className={styles.icon, styles.bIcon} icon={faGraduationCap} />
-                <p className={ styles.bText}>Master's Degree | Innovative Governance and Public Management</p>
-            </div>
-
-            <div className={styles.item}>
-                <FontAwesomeIcon className={styles.icon} icon={faUniversity} />
-                <p className={styles.text}>Tampere University (2017 - 2019)</p>
-            </div>
-
-            <div className={styles.item}>
-                <FontAwesomeIcon className={styles.icon} icon={faListUl} />
-                <p className={styles.courses}>Design Thinking, innovations and ecosystems, Organizational change and change management,
-                    Governance, Leadership in public organizations, Industrial Development </p>
-            </div>
-        </div>
-        
         </div>
     )
 }

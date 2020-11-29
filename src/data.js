@@ -92,61 +92,65 @@ const cv = {
 
     ],
 
-    skills: [
-        {
-            stack: "Frontend",
-            techs:"Accessibility, Responsiveness, CSS, HTML, JavaScript, Material-UI, React.js, Redux, SCSS, TypeScript."
-        },
-        
-        {
-            stack: "Backend",
-            techs:"Express.js, Node.js, Rest API."
-        },
+    skills: {
+        tech: [
+            {
+                stack: "Frontend",
+                techs:"Accessibility, Responsiveness, CSS, HTML, JavaScript, Material-UI, React.js, Redux, SCSS, TypeScript."
+            },
+            
+            {
+                stack: "Backend",
+                techs:"Express.js, Node.js, Rest API."
+            },
 
-        {
-            stack: "Database",
-            techs:"MongoDB, PostgreSQL"
-        },
+            {
+                stack: "Database",
+                techs:"MongoDB, PostgreSQL"
+            },
 
-        {
-            stack: "Testing",
-            techs:"Cypress, Jest"
-        },
+            {
+                stack: "Testing",
+                techs:"Cypress, Jest"
+            },
 
-        {
-            stack: "DevOps/Cloud",
-            techs:"Docker, CI/CD & Github Actions"
-        },
+            {
+                stack: "DevOps/Cloud",
+                techs:"Docker, CI/CD & Github Actions"
+            },
 
-        {
-            stack: "Design and Graphics",
-            techs:"Adobe Photoshop, Adobe Illustrator, Adobe premiere Pro, Adobe XD, Figma"
-        },
+            {
+                stack: "Design and Graphics",
+                techs:"Adobe Photoshop, Adobe Illustrator, Adobe premiere Pro, Adobe XD, Figma"
+            },
 
-        {
-            stack: "Project Management & Collaboration",
-            techs:"Design Thinking, Servive Design, Scrum, Github Project Management"
-        },
-    ],
+            {
+                stack: "Project Management",
+                techs:"Design Thinking, Servive Design, Scrum, Github Project Management"
+            }
+        ],
 
-    languages: [
-        {
-            language: "English",
-            profeciency:"Fluent"
-        },
-        {
-            language: "Finnish",
-            profeciency:"Intermediate"
-        },
-        {
-            language: "Nepali",
-            profeciency:"Native"
-        },
-        {
-            language: "Hindi",
-            profeciency:"Fluent"
-        },
-    ], 
+        language: [
+            {
+                language: "English",
+                profeciency:"Fluent"
+            },
+            {
+                language: "Finnish",
+                profeciency:"Intermediate"
+            },
+            {
+                language: "Nepali",
+                profeciency:"Native"
+            },
+            {
+                language: "Hindi",
+                profeciency:"Fluent"
+            }
+
+        ]
+    },
+     
 
     trainings: [
         {
