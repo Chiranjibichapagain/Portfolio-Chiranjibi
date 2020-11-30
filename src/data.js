@@ -8,6 +8,9 @@ import { faUikit } from '@fortawesome/free-brands-svg-icons'
 import { faReact } from '@fortawesome/free-brands-svg-icons'
 import { faSass } from '@fortawesome/free-brands-svg-icons'
 import { faNode } from '@fortawesome/free-brands-svg-icons'
+import { faDocker } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faAdob } from '@fortawesome/free-brands-svg-icons'
 import redux from './assets/redux.svg'
 import materialUi from './assets/material-ui.svg'
 import typeScript from './assets/typescript-icon.svg'
@@ -198,28 +201,59 @@ const cv = {
                 techs: [
                     {
                         tech: "Cypress",
-                        icon:
+                        icon:cypress
                     },
                     {
                         tech: "Jest",
-                        icon:icon
+                        icon:jest
                     }
                 ]
             },
 
             {
                 stack: "DevOps/Cloud",
-                techs:"Docker, CI/CD & Github Actions"
+                techs: [
+                    {
+                        tech: "Docker",
+                        icon:faDocker
+                    },
+                    {
+                        tech: "CI/CD/Github Actions",
+                        icon:faGithub
+                    },
+                ]
             },
 
             {
                 stack: "Design, Graphics",
+                techs: [
+                    {
+                        tech: "Adobe Photoshop"
+                        icon:
+                    },
+                    {
+                        tech: "Adobe Premiere"
+                        icon:
+                    },
+                    {
+                        tech: "Adobe Illustrator"
+                        icon:
+                    },
+                    {
+                        tech: "Adobe XD"
+                        icon:
+                    },
+                    {
+                        tech: "Figma"
+                        icon:
+                    },
+                ]
                 techs:"Adobe Photoshop, Adobe Illustrator, Adobe premiere Pro, Adobe XD, Figma"
             },
 
             {
                 stack: "Projects",
-                techs:"Design Thinking, Servive Design, Scrum, Github Project Management"
+                techs:"Design Thinking, Service Design, Scrum, Github Project Management"
             }
         ],
 
