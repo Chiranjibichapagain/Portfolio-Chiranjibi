@@ -10,7 +10,7 @@ import { faSass } from '@fortawesome/free-brands-svg-icons'
 import { faNode } from '@fortawesome/free-brands-svg-icons'
 import { faDocker } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faAdob } from '@fortawesome/free-brands-svg-icons'
+import { faFigma } from '@fortawesome/free-brands-svg-icons'
 import redux from './assets/redux.svg'
 import materialUi from './assets/material-ui.svg'
 import typeScript from './assets/typescript-icon.svg'
@@ -20,6 +20,14 @@ import mongoDB from './assets/mongodb.svg'
 import postgreSql from './assets/postgresql.svg'
 import cypress from './assets/cypress.svg'
 import jest from './assets/jest.svg'
+import photoshop from './assets/photoshop.svg'
+import illustrator from './assets/illustrator.svg'
+import premiere from './assets/premiere.svg'
+import xd from './assets/adobe-xd.svg'
+import english from './assets/uk.svg'
+import nepali from './assets/nepal.svg'
+import hindi from './assets/india.svg'
+import finnish from './assets/finland.svg'
 
 const cv = {
     education: [
@@ -228,50 +236,45 @@ const cv = {
                 stack: "Design, Graphics",
                 techs: [
                     {
-                        tech: "Adobe Photoshop"
-                        icon:
+                        tech: "Adobe Photoshop",
+                        icon:photoshop
                     },
                     {
-                        tech: "Adobe Premiere"
-                        icon:
+                        tech: "Adobe Premiere",
+                        icon:premiere
                     },
                     {
-                        tech: "Adobe Illustrator"
-                        icon:
+                        tech: "Adobe Illustrator",
+                        icon:illustrator
                     },
                     {
-                        tech: "Adobe XD"
-                        icon:
+                        tech: "Adobe XD",
+                        icon:xd
                     },
                     {
-                        tech: "Figma"
-                        icon:
+                        tech: "Figma",
+                        icon:faFigma
                     },
                 ]
-                techs:"Adobe Photoshop, Adobe Illustrator, Adobe premiere Pro, Adobe XD, Figma"
             },
-
-            {
-                stack: "Projects",
-                techs:"Design Thinking, Service Design, Scrum, Github Project Management"
-            }
+           
         ],
 
         language: [
             {
-                language: "English",
+                language: english,
                 profeciency:"Fluent"
             },
             {
-                language: "Finnish",
+                language: finnish,
                 profeciency:"Intermediate"
             },
             {
-                language: "Nepali",
+                language: nepali,
                 profeciency:"Native"
             },
             {
-                language: "Hindi",
+                language: hindi,
                 profeciency:"Fluent"
             }
 

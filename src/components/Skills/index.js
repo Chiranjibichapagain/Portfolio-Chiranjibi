@@ -16,20 +16,26 @@ import typeScript from '../../assets/typescript-icon.svg'
 import styles from './Skills.module.css'
 
 
-const Skills=()=> {
+const Skills = ({ data }) => {
+    
+    console.log('xxxx--', data)
     return (
 
         <div className={styles.main}>
             <div className={styles.titleItem}>
                 <FontAwesomeIcon className={styles.icon, styles.bIcon} icon={faDesktop} />
-                    <p className={styles.bText}>Front-End</p>
+                <p className={styles.bText}>{ data.stack}</p>
             </div>
+
             <div className={styles.techs}>
+                {data.techs.map((item) => (
                 <div className={styles.tech}>
-                    <FontAwesomeIcon className={styles.icon3} icon={faUniversalAccess} />
-                    <h5 className={styles.text}>Accessibility</h5>    
+                    <FontAwesomeIcon className={styles.icon3} icon={item.icon} />
+                        <h5 className={styles.text}>{item.tech}</h5>    
                 </div>
-                <div className={styles.tech}>
+                ))}
+
+                {/* <div className={styles.tech}>
                     <FontAwesomeIcon className={styles.icon2} icon={faMobileAlt} />
                     <h5 className={styles.text}>Responsiveness</h5>    
                 </div>
@@ -64,7 +70,7 @@ const Skills=()=> {
                 <div className={styles.tech}>
                     <img className={styles.img} src={typeScript} alt="material ui"/>
                     <h5 className={styles.text}>TypeScript</h5>    
-                </div>             
+                </div>              */}
                 
             </div>
         </div>
