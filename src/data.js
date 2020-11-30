@@ -28,6 +28,12 @@ import english from './assets/uk.svg'
 import nepali from './assets/nepal.svg'
 import hindi from './assets/india.svg'
 import finnish from './assets/finland.svg'
+import front from './assets/front.svg'
+import backend from './assets/server.svg'
+import cloud from './assets/cloud.svg'
+import db from './assets/database.svg'
+import design from './assets/design.svg'
+import test from './assets/testing.svg'
 
 const cv = {
     education: [
@@ -127,133 +133,163 @@ const cv = {
         tech: [
             {
                 stack: "Frontend",
+                icon:front,
                 techs: [
                     {
                         tech: "Accessibility",
-                        icon:faUniversalAccess
+                        icon: faUniversalAccess,
+                        type:"fontawesome"
                     },
                     {
                         tech: "Responsiveness",
-                        icon:faPhoneAlt
+                        icon:faMobileAlt,
+                        type:"fontawesome"
                     },
                     {
                         tech: "CSS3",
-                        icon:faCss3Alt
+                        icon:faCss3Alt,
+                        type:"fontawesome"
                     },
                     {
                         tech: "HTML5",
-                        icon:faHtml5
+                        icon:faHtml5,
+                        type:"fontawesome"
                     },
                     {
                         tech: "JavaScript",
-                        icon:faJs
+                        icon:faJs,
+                        type:"fontawesome"
                     },
                     {
                         tech: "materialUi",
-                        icon:materialUi
+                        icon:materialUi,
+                        type:"image"
                     },
                     {
                         tech: "React.js",
-                        icon:faReact
+                        icon:faReact,
+                        type:"fontawesome"
                     },
                     {
                         tech: "Redux",
-                        icon:redux
+                        icon:redux,
+                        type:"image"
                     },
                     {
                         tech: "SCSS",
-                        icon:faSass
+                        icon:faSass,
+                        type:"fontawesome"
                     },
                     {
                         tech: "TypeScript",
-                        icon:typeScript
+                        icon:typeScript,
+                        type:"image"
                     },
                 ]
             },
             
             {
                 stack: "Backend",
+                icon:backend,
                 techs: [
                     {
                         tech: "Express.js",
-                        icon:expressJs
+                        icon:expressJs,
+                        type:"image"
                     },
                     {
                         tech: "Node.js",
-                        icon:faNode
+                        icon:faNode,
+                        type:"fontawesome"
                     },
 
                     {
                         tech: "Rest API",
-                        icon:restApi
+                        icon:restApi,
+                        type:"image"
                     }
                 ]
             },
 
             {
                 stack: "Database",
+                icon:db,
                 techs: [
                     {
                         tech: "MongoDB",
-                        icon:mongoDB
+                        icon:mongoDB,
+                        type:"image"
                     },
                     {
                         tech: "PostgreSQL",
-                        icon:postgreSql
+                        icon:postgreSql,
+                        type:"image"
                     },
                 ]
             },
 
             {
                 stack: "Testing",
+                icon:test,
                 techs: [
                     {
                         tech: "Cypress",
-                        icon:cypress
+                        icon:cypress,
+                        type:"image"
                     },
                     {
                         tech: "Jest",
-                        icon:jest
+                        icon:jest,
+                        type:"image"
                     }
                 ]
             },
 
             {
                 stack: "DevOps/Cloud",
+                icon:cloud,
                 techs: [
                     {
                         tech: "Docker",
-                        icon:faDocker
+                        icon:faDocker,
+                        type:"fontawesome"
                     },
                     {
                         tech: "CI/CD/Github Actions",
-                        icon:faGithub
+                        icon:faGithub,
+                        type:"fontawesome"
                     },
                 ]
             },
 
             {
                 stack: "Design, Graphics",
+                icon:design,
                 techs: [
                     {
                         tech: "Adobe Photoshop",
-                        icon:photoshop
+                        icon:photoshop,
+                        type:"image"
                     },
                     {
                         tech: "Adobe Premiere",
-                        icon:premiere
+                        icon:premiere,
+                        type:"image"
                     },
                     {
                         tech: "Adobe Illustrator",
-                        icon:illustrator
+                        icon:illustrator,
+                        type:"image"
                     },
                     {
                         tech: "Adobe XD",
-                        icon:xd
+                        icon:xd,
+                        type:"image"
                     },
                     {
                         tech: "Figma",
-                        icon:faFigma
+                        icon:faFigma,
+                        type:"fontawesome"
                     },
                 ]
             },

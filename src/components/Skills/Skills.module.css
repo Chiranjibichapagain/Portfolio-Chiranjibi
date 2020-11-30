@@ -42,7 +42,7 @@
 .bIcon {
     margin: 15px;
     font-size: 40px;
-    color:rgb(255, 86, 56);
+    color:rgb(87, 0, 95);
 }
 
 .bText {
@@ -82,3 +82,10 @@
     height: 30px;
     margin: 7px;
 }
+
+.bImg {
+    width: 40px;
+    height: 40px;
+    margin: 7px;
+}
+

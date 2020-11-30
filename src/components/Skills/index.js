@@ -23,15 +23,20 @@ const Skills = ({ data }) => {
 
         <div className={styles.main}>
             <div className={styles.titleItem}>
-                <FontAwesomeIcon className={styles.icon, styles.bIcon} icon={faDesktop} />
+                <img className={styles.bImg} src={data.icon} alt={data.stack}/>
                 <p className={styles.bText}>{ data.stack}</p>
             </div>
 
             <div className={styles.techs}>
                 {data.techs.map((item) => (
+                 item.type==="fontawesome"?   
                 <div className={styles.tech}>
                     <FontAwesomeIcon className={styles.icon3} icon={item.icon} />
-                        <h5 className={styles.text}>{item.tech}</h5>    
+                    <h5 className={styles.text}>{item.tech}</h5>    
+                </div>:
+                <div className={styles.tech}>
+                    <img className={styles.img} src={item.icon} alt="material ui"/>
+                    <h5 className={styles.text}>{item.tech}</h5>    
                 </div>
                 ))}
 
