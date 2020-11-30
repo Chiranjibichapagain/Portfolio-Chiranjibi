@@ -14,10 +14,11 @@ import redux from '../../assets/redux.svg'
 import materialUi from '../../assets/material-ui.svg'
 import typeScript from '../../assets/typescript-icon.svg'
 import styles from './Skills.module.css'
-import classes from './Skills.module.css'
+
 
 const Skills=()=> {
     return (
+
         <div className={styles.main}>
             <div className={styles.titleItem}>
                 <FontAwesomeIcon className={styles.icon, styles.bIcon} icon={faDesktop} />
@@ -64,7 +65,6 @@ const Skills=()=> {
                     <img className={styles.img} src={typeScript} alt="material ui"/>
                     <h5 className={styles.text}>TypeScript</h5>    
                 </div>             
-               
                 
             </div>
         </div>

@@ -1,3 +1,23 @@
+import { faDesktop, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
+import { faUniversalAccess } from '@fortawesome/free-solid-svg-icons'
+import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
+import { faCss3Alt, faJs } from '@fortawesome/free-brands-svg-icons'
+import { faHtml5 } from '@fortawesome/free-brands-svg-icons'
+import { faJsSquare } from '@fortawesome/free-brands-svg-icons'
+import { faUikit } from '@fortawesome/free-brands-svg-icons'
+import { faReact } from '@fortawesome/free-brands-svg-icons'
+import { faSass } from '@fortawesome/free-brands-svg-icons'
+import { faNode } from '@fortawesome/free-brands-svg-icons'
+import redux from './assets/redux.svg'
+import materialUi from './assets/material-ui.svg'
+import typeScript from './assets/typescript-icon.svg'
+import expressJs from './assets/express.svg'
+import restApi from './assets/restApi.svg'
+import mongoDB from './assets/mongodb.svg'
+import postgreSql from './assets/postgresql.svg'
+import cypress from './assets/cypress.svg'
+import jest from './assets/jest.svg'
+
 const cv = {
     education: [
         {
@@ -96,22 +116,95 @@ const cv = {
         tech: [
             {
                 stack: "Frontend",
-                techs:"Accessibility, Responsiveness, CSS, HTML, JavaScript, Material-UI, React.js, Redux, SCSS, TypeScript."
+                techs: [
+                    {
+                        tech: "Accessibility",
+                        icon:faUniversalAccess
+                    },
+                    {
+                        tech: "Responsiveness",
+                        icon:faPhoneAlt
+                    },
+                    {
+                        tech: "CSS3",
+                        icon:faCss3Alt
+                    },
+                    {
+                        tech: "HTML5",
+                        icon:faHtml5
+                    },
+                    {
+                        tech: "JavaScript",
+                        icon:faJs
+                    },
+                    {
+                        tech: "materialUi",
+                        icon:materialUi
+                    },
+                    {
+                        tech: "React.js",
+                        icon:faReact
+                    },
+                    {
+                        tech: "Redux",
+                        icon:redux
+                    },
+                    {
+                        tech: "SCSS",
+                        icon:faSass
+                    },
+                    {
+                        tech: "TypeScript",
+                        icon:typeScript
+                    },
+                ]
             },
             
             {
                 stack: "Backend",
-                techs:"Express.js, Node.js, Rest API."
+                techs: [
+                    {
+                        tech: "Express.js",
+                        icon:expressJs
+                    },
+                    {
+                        tech: "Node.js",
+                        icon:faNode
+                    },
+
+                    {
+                        tech: "Rest API",
+                        icon:restApi
+                    }
+                ]
             },
 
             {
                 stack: "Database",
-                techs:"MongoDB, PostgreSQL"
+                techs: [
+                    {
+                        tech: "MongoDB",
+                        icon:mongoDB
+                    },
+                    {
+                        tech: "PostgreSQL",
+                        icon:postgreSql
+                    },
+                ]
             },
 
             {
                 stack: "Testing",
-                techs:"Cypress, Jest"
+                techs: [
+                    {
+                        tech: "Cypress",
+                        icon:
+                    },
+                    {
+                        tech: "Jest",
+                        icon:icon
+                    }
+                ]
             },
 
             {
