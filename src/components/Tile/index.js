@@ -2,13 +2,11 @@ import React from 'react'
 
 import styles from './Tile.module.css'
 
-const Tile=({image, name})=> {
+const Tile=({image, name, handleClick})=> {
     return (
-        <div className={styles.tile}>
+        <div onClick={handleClick} className={styles.tile}>
             <img className={styles.image} src={image} alt="project picture" />
-            {/* <div className={styles.nameDiv}> */}
                 <h5 className={styles.name}>{name}</h5>
-            {/* </div> */}
         </div>
     )
 }

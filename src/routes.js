@@ -5,6 +5,7 @@ import UX from './components/UX'
 import Development from './components/Development'
 import Home from './components/Home'
 import CV from './components/CV'
+import ProjectDetails from './components/ProjectDetails'
 
 const Routes = () => (
     <Switch>
@@ -12,6 +13,7 @@ const Routes = () => (
         <Route exact path="/ux" component={UX} />
         <Route exact path="/development" component={Development} />
         <Route exact path="/cv" component={CV} />
+        <Route exact path="/projects" component={ProjectDetails} />
     </Switch>
 );
 export default Routes
