@@ -1,19 +1,9 @@
-import React, { useState } from "react";
-import {useHistory} from 'react-router-dom'
+import React from "react";
 
 import styles from "./About.module.css";
 import Button from "../Button";
-import CV from "../../assets/cv.jpg";
 
 const About = () => {
-  const history= useHistory()
-  
-  const toCv = () => {
-    console.log('cv clicked!!')
-    history.push('/cv')
-  }
-
-
   return (
     <div className={styles.main}>
       <h2 className={styles.heading}>About Me</h2>
@@ -43,7 +33,6 @@ const About = () => {
         <br />
         Want to know more ? check out my CV.
       </p>
-        <Button text="view cv" type="primary" handleClick={toCv} />
     </div>
   );
 };

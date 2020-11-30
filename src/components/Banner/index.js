@@ -1,4 +1,5 @@
 import React from "react";
+import {useHistory} from 'react-router-dom'
 
 import styles from "./Banner.module.css";
 import imgMor from "../../assets/morning.jpg";
@@ -6,6 +7,7 @@ import imgAft from "../../assets/afternoon.jpg";
 import imgEve from "../../assets/evening.jpg";
 
 const Banner = () => {
+  const history= useHistory()
   const getGreetings = () => {
     const date = new Date();
     const hour = date.getHours();
@@ -37,6 +39,10 @@ const Banner = () => {
     backgroundImage: `url(${getImg()})`,
   };
 
+  const toCV = () => {
+    history.push('/cv')
+  }
+
   return (
     <div style={divStyle} className={styles.banner}>
       <h1 className={styles.greetings}>
@@ -49,6 +55,7 @@ const Banner = () => {
       <p className={styles.welcome}>
         I warmly welcome you to my portfolio page.{" "}
       </p>
+      <button onClick={toCV} className={styles.button} >Straight to CV</button>
     </div>
   );
 };
