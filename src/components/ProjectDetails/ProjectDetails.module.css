@@ -1,10 +1,63 @@
 .main {
- width: 100vw;
+  width: 100vw;
   padding: 2em 20em 5em 20em;
   font-family: Ubuntu, sans-serif;
   letter-spacing: 2px;
   background-color: rgb(192, 251, 255);
   background-attachment: fixed;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
 
+.heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.block {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 50px 0px;
+  flex-wrap: wrap;
+}
+.imgDiv {
+  width: 350px;
+  height: 400px;
+  background-color: #fdfcfa;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px rgba(22, 22, 22, 0.863);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.image {
+  width: 250px;
+  height: 270px;
+  transition: 0.3s ease-in-out;
+}
+.image:hover {
+  transform: scale(1.2);
+}
+
+.textDiv {
+  width: 500px;
+  margin: 10px 0px;
+}
+.subHead {
+  font-family: Ubuntu, sans-serif;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.texts {
+  font-family: "Zilla Slab", serif;
+  color: #2a2a2a;
+  font-size: 18px;
+  line-height: 150%;
+}
+hr {
+  height: 5px;
+  color: rgb(0, 0, 0);
 }
