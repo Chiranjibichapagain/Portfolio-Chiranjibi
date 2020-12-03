@@ -1,4 +1,5 @@
 import React from 'react'
+import {useHistory} from 'react-router-dom'
 
 import styles from './ProjectDetails.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -6,10 +7,16 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 import demo from '../../assets/super.png'
 
-const ProjectDetails=()=> {
+const ProjectDetails = () => {
+    const history=useHistory()
+    const handleClick = () => {
+        console.log('clicked-----')
+        history.push("/development")
+    }
+
     return (
         <div className={styles.main}>
-            <FontAwesomeIcon className={styles.arrow} icon={faArrowLeft} />
+            <FontAwesomeIcon onClick={handleClick} className={styles.arrow} icon={faArrowLeft} />
             <h1 className={styles.heading}>This is product details page....</h1>
             <div className={styles.block} >
                 <div className={styles.imgDiv}>

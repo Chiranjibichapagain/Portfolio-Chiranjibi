@@ -5,8 +5,8 @@ import styles from './Tile.module.css'
 const Tile=({image, name, handleClick})=> {
     return (
         <div onClick={handleClick} className={styles.tile}>
-            <img className={styles.image} src={image} alt="project picture" />
-                <h5 className={styles.name}>{name}</h5>
+            <img className={styles.image} src={image} alt="project" />
+             <h5 className={styles.name}>{name}</h5>
         </div>
     )
 }
