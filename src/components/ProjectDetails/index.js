@@ -1,11 +1,15 @@
 import React from 'react'
 
 import styles from './ProjectDetails.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+
 import demo from '../../assets/super.png'
 
 const ProjectDetails=()=> {
     return (
         <div className={styles.main}>
+            <FontAwesomeIcon className={styles.arrow} icon={faArrowLeft} />
             <h1 className={styles.heading}>This is product details page....</h1>
             <div className={styles.block} >
                 <div className={styles.imgDiv}>
