@@ -41,13 +41,32 @@
   justify-content: center;
   margin: 10px 0px;
 }
+.imgDiv2 {
+  width: 430px;
+  height: 480px;
+  background-color: #fdfcfa;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px rgba(22, 22, 22, 0.863);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+}
 
 .image {
   width: 250px;
   height: 270px;
   transition: 0.3s ease-in-out;
 }
+.image2 {
+  width: 330px;
+  height: 350px;
+  transition: 0.3s ease-in-out;
+}
 .image:hover {
+  transform: scale(1.2);
+}
+.image2:hover {
   transform: scale(1.2);
 }
 
