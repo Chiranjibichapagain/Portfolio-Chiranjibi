@@ -11,9 +11,10 @@ const Routes = () => (
     <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/ux" component={UX} />
-        <Route exact path="/development" component={Development} />
+        <Route exact strict path="/development" component={Development} />
         <Route exact path="/cv" component={CV} />
-        <Route exact path="/projects" component={ProjectDetails} />
+        <Route exact path="/devprojects/:id" component={ProjectDetails} />
+        <Route exact path="/uxprojects/:id" component={ProjectDetails} />
     </Switch>
 );
 export default Routes

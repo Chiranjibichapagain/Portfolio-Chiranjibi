@@ -10,7 +10,7 @@ const Projects = () => {
     history.push('/UX')
   }
   const toDevelopment = () => {
-    history.push('/Development')
+    history.push('/development')
   }
   
   return (
