@@ -4,17 +4,21 @@ import {useHistory} from 'react-router-dom'
 import styles from './ProjectDetails.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
-
-import projectData from '../../projectData'
 import projects from '../../projectData'
 
 const ProjectDetails = ({ match }) => {
+    const id = match.params.id
+    const data = id.includes('dev')?projects.dev.find((item) => item.id === id):projects.design.find((item) => item.id === id)
+    console.log('xxx--', data)
+    
     const history=useHistory()
     const handleClick = () => {
-        history.push("/development")
+        if (id.includes('dev')) {
+            history.push("/development")
+        } else {
+            history.push("/ux")
+        }
     }
-    const id= match.params.id
-    const data = projects.dev.find((item) => item.id ==id)
     
     return (
         <div className={styles.main}>
@@ -27,7 +31,7 @@ const ProjectDetails = ({ match }) => {
                 <div className={styles.textDiv}>
                     <h3 className={styles.subHead}>{data.title}</h3>
                     <p className={styles.texts} >{data.about }</p>
-                    <a href={data.link} target="blank" ><button className={styles.button} >view app</button></a>
+                    <a href={data.link} target="blank"><button className={styles.button} >view app</button></a>
                 </div>
             </div>
              <hr/>

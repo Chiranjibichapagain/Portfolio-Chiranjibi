@@ -1,22 +1,31 @@
 import React from 'react'
+import {useHistory, Link} from 'react-router-dom'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import projects from '../../projectData'
 import Tile from '../Tile'
 import Mobile from '../../assets/mobile.png'
 import styles from './Ux.module.css'
 
-const UX =()=> {
+const UX = () => {
+    const history=useHistory()
+    const handleClick = () => {
+    history.push("/")
+    }
+
     return (
         <div className={styles.main}>
-            <h1 className={styles.heading}> UX/UI Projects</h1>  
-            <div className={styles.projects}>
-            <Tile image={Mobile} name="Mass Calculation App" />
-            <Tile image={Mobile} name="Mass Calculation App" />
-            <Tile image={Mobile} name="Mass Calculation App" />
-            <Tile image={Mobile} name="Mass Calculation App" />
-            <Tile image={Mobile} name="Mass Calculation App" />
-            <Tile image={Mobile} name="Mass Calculation App" />
-            </div>
-        </div>
+        <FontAwesomeIcon onClick={handleClick} className={styles.arrow} icon={faArrowLeft} />
+      <h1 className={styles.heading}>UX/UI Projects</h1>  
+      <div className={styles.projects}>
+        {projects.design.map((project) => (
+          <Link key={project.id}  to= {`/uxprojects/${project.id}`}>
+          <Tile image={Mobile} name={project.title} />
+          </Link>
+        ))}
+      </div>
+    </div>
     )
 }
 
