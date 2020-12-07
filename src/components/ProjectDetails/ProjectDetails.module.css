@@ -87,7 +87,7 @@
   font-size: 18px;
   line-height: 150%;
 }
-hr {
+.line {
   height: 5px;
   color: rgb(0, 0, 0);
 }

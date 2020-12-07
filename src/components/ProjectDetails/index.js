@@ -34,7 +34,7 @@ const ProjectDetails = ({ match }) => {
                     <a href={data.link} target="blank"><button className={styles.button} >view app</button></a>
                 </div>
             </div>
-             <hr/>
+            <hr className={styles.lines}/>
             <div className={styles.block}>
                 <div className={styles.imgDiv2}>
                     <img className={styles.image2} src={data.images[1]} alt="phone" />
