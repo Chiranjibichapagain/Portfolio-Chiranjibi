@@ -12,7 +12,7 @@ const projects = {
         {
             id:"dev-2",
             title:"Contact-list App",
-            about: "I learned most of the skills i have in Full Stack Web Development on my own. Online courses, youtube video, documentation were my source of information. I have earned my Bachelors degree in Business Management and Masters degree in Public Administration. Both from Finland. After i kinda failed to find a job related to my degrees, i started thinking of alternative career. I was always interested in the filed of IT and i thought of giving it a try. From the beginning of 2020 while Corona Virus was engaging the whole world, so the Web Development did to me.",
+            about:"This is a React app. I did this project to brush my skills in JavaScript, React, Css etc. In this project i have used built CRUD (Create, Read, Update, Delete) functionalities. As this project hasn't used database, so i have setup the local storage to save the user's data. The page is fully responsive to various devices.",
             images: [image, image, image,image],
             link:"https://chiranjibi-contact-app.netlify.app/"
         },
