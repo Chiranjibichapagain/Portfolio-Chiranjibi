@@ -5,13 +5,33 @@
 }
 
 .logo {
-  width:200px;
+  width: 200px;
   margin: 30px 50px 10px;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .navDiv {
   width: 100vw;
   position: fixed;
   background: linear-gradient(to right, white blue);
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .navDiv {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 0px 2px rgb(70, 70, 70);
+  }
+  .logo {
+    width: 100px;
+    margin: 10px;
+  }
 }

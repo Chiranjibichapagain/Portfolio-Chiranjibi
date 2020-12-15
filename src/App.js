@@ -17,10 +17,10 @@ function App() {
       <div className="navDiv">
         <img onClick={goHome} className="logo" src={logo} alt="logo" />
       </div>
-      <main>
+      {/* <main>
         <Routes/>
-      </main>
-      <Footer />
+      </main> */}
+      {/* <Footer /> */}
     </div>
   );
 }
