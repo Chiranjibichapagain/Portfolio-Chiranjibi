@@ -1,4 +1,13 @@
 import image from './assets/super.png'
+import eCom1 from './assets/mocks/e-commerce-d1.png'
+import eCom2 from './assets/mocks/e-com_d2.jpg'
+import eCom3 from './assets/mocks/e-com_m1.png'
+import contact1 from './assets/mocks/contact_t0.jpg'
+import contact2 from './assets/mocks/contact_t1.png'
+import contact3 from './assets/mocks/contact_t3.png'
+import universe1 from './assets/mocks/universe_t1.jpg'
+import universe2 from './assets/mocks/universe_d1.jpg'
+import universe3 from './assets/mocks/universe_t2.jpg'
 
 const projects = {
     dev: [
@@ -6,14 +15,14 @@ const projects = {
             id:"dev-1",
             title:"E-commerce Website",
             about: "This is a MERN (MongoDB, Express, React, Node) stack project. This is a demo project i did to sharpen my skill in Full-Stack technologies. I did this project using Typescript. Technologies and libraries such as Redux, Google Authentication, Material UI, Context API are also used in this project. Features of this projects includes CRUD operations for user and product, google login, password reset, Admin roles (bann user, give user roles), add product to cart and checkout. The server side of the application is deployed in the Heroku and client side in the Netlify.",
-            images: [image, image, image,image],
+            images: [eCom1, eCom2, eCom3],
             link:"https://e-commerce-proj.netlify.app/"
         },
         {
             id:"dev-2",
             title:"Contact-list App",
             about:"This is a React app. I did this project to brush my skills in JavaScript, React, Css etc. In this project i have used built CRUD (Create, Read, Update, Delete) functionalities. As this project hasn't used database, so i have setup the local storage to save the user's data. The page is fully responsive to various devices.",
-            images: [image, image, image,image],
+            images: [contact1, contact2, contact3],
             link:"https://chiranjibi-contact-app.netlify.app/"
         },
         {
@@ -27,7 +36,7 @@ const projects = {
             id:"dev-4",
             title:"Universe Mass App",
             about: "I learned most of the skills i have in Full Stack Web Development on my own. Online courses, youtube video, documentation were my source of information. I have earned my Bachelors degree in Business Management and Masters degree in Public Administration. Both from Finland. After i kinda failed to find a job related to my degrees, i started thinking of alternative career. I was always interested in the filed of IT and i thought of giving it a try. From the beginning of 2020 while Corona Virus was engaging the whole world, so the Web Development did to me.",
-            images: [image, image, image,image],
+            images: [universe1, universe2, universe3],
             link:"https://www.linkedin.com/in/chiranjibi-chapagain-4aa57595/"
         },
     ],
