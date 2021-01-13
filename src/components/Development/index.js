@@ -20,8 +20,8 @@ const Development = () => {
       <h1 className={styles.heading}>Web Development Projects</h1>  
       <div className={styles.projects}>
         {projects.dev.map((project) => (
-          <Link  to= {`/devprojects/${project.id}`}>
-          <Tile  image={Mobile} name={project.title} />
+          <Link className={styles.link}  to= {`/devprojects/${project.id}`}>
+          <Tile  image={project.images[0]} name={project.title} />
           </Link>
         ))}
       </div>

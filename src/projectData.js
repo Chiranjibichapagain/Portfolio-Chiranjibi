@@ -1,13 +1,13 @@
 import image from './assets/super.png'
-import eCom1 from './assets/mocks/e-commerce-d1.png'
-import eCom2 from './assets/mocks/e-com_d2.jpg'
+import eCom1 from './assets/mocks/e-com_m2.png'
+import eCom2 from './assets/mocks/e-com_d2.png'
 import eCom3 from './assets/mocks/e-com_m1.png'
-import contact1 from './assets/mocks/contact_t0.jpg'
+import contact1 from './assets/mocks/contact_t0.png'
 import contact2 from './assets/mocks/contact_t1.png'
 import contact3 from './assets/mocks/contact_t3.png'
-import universe1 from './assets/mocks/universe_t1.jpg'
-import universe2 from './assets/mocks/universe_d1.jpg'
-import universe3 from './assets/mocks/universe_t2.jpg'
+import joinme1 from './assets/mocks/joinme_m2.png'
+import joinme2 from './assets/mocks/joinme_m1.png'
+import joinme3 from './assets/mocks/joinme_laptop.png'
 
 const projects = {
     dev: [
@@ -29,16 +29,16 @@ const projects = {
             id:"dev-3",
             title:"JoinMe App",
             about: "I learned most of the skills i have in Full Stack Web Development on my own. Online courses, youtube video, documentation were my source of information. I have earned my Bachelors degree in Business Management and Masters degree in Public Administration. Both from Finland. After i kinda failed to find a job related to my degrees, i started thinking of alternative career. I was always interested in the filed of IT and i thought of giving it a try. From the beginning of 2020 while Corona Virus was engaging the whole world, so the Web Development did to me.",
-            images: [image, image, image,image],
+            images: [joinme1, joinme2, joinme3],
             link:"https://www.linkedin.com/in/chiranjibi-chapagain-4aa57595/"
-        },
-        {
-            id:"dev-4",
-            title:"Universe Mass App",
-            about: "I learned most of the skills i have in Full Stack Web Development on my own. Online courses, youtube video, documentation were my source of information. I have earned my Bachelors degree in Business Management and Masters degree in Public Administration. Both from Finland. After i kinda failed to find a job related to my degrees, i started thinking of alternative career. I was always interested in the filed of IT and i thought of giving it a try. From the beginning of 2020 while Corona Virus was engaging the whole world, so the Web Development did to me.",
-            images: [universe1, universe2, universe3],
-            link:"https://www.linkedin.com/in/chiranjibi-chapagain-4aa57595/"
-        },
+        }
+        // {
+        //     id:"dev-4",
+        //     title:"Universe Mass App",
+        //     about: "I learned most of the skills i have in Full Stack Web Development on my own. Online courses, youtube video, documentation were my source of information. I have earned my Bachelors degree in Business Management and Masters degree in Public Administration. Both from Finland. After i kinda failed to find a job related to my degrees, i started thinking of alternative career. I was always interested in the filed of IT and i thought of giving it a try. From the beginning of 2020 while Corona Virus was engaging the whole world, so the Web Development did to me.",
+        //     images: [universe1, universe2, universe3],
+        //     link:"https://www.linkedin.com/in/chiranjibi-chapagain-4aa57595/"
+        // },
     ],
 
     design: [

@@ -56,13 +56,15 @@
 }
 
 .image {
-  width: 250px;
-  height: 270px;
+  width: 300px;
+  height: 320px;
+  object-fit: contain;
   transition: 0.3s ease-in-out;
 }
 .image2 {
   width: 330px;
   height: 350px;
+  object-fit: contain;
   transition: 0.3s ease-in-out;
 }
 .image:hover {
