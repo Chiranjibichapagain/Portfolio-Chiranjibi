@@ -8,6 +8,9 @@
   background-attachment: fixed;
   background-size: cover;
 }
+.link {
+  text-decoration: none;
+}
 .heading {
   color: #2a2a2a;
   text-align: center;

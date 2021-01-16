@@ -9,7 +9,6 @@
   flex-direction: column;
 }
 
-
 .heading {
   font-family: Ubuntu, sans-serif;
   margin-bottom: 1em;
@@ -18,83 +17,79 @@
 }
 
 .sections {
-    display:flex;
-    justify-content: center;
-
+  display: flex;
+  justify-content: center;
 }
 
-.section{
-    max-height: 45px;
-    padding:10px 20px;
-    background-color: #d4f0fc;
-    cursor: pointer;
-    box-shadow: 0px 0px 1px #1d1d1d;
-    border-radius: 4px;
-    margin-left: 15px;
-    color: #818181;
-    font-family: Ubuntu, sans-serif;
-    font-weight: bolder;
-    font-size: 20px;
-    transition: 0.3s ease-in-out;
+.section {
+  max-height: 45px;
+  padding: 10px 20px;
+  background-color: #d4f0fc;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px #1d1d1d;
+  border-radius: 4px;
+  margin-left: 15px;
+  color: #818181;
+  font-family: Ubuntu, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
 }
-.sectionSelected{
-    max-height: 45px;
-    padding:10px 20px;
-    background-color: #1ab7fa;
-    cursor: pointer;
-    box-shadow: 0.5px 0px 3px #1d1d1d;
-    border-radius: 4px;
-    margin-left: 15px;
-    color: #2a2a2a;
-    font-family: Ubuntu, sans-serif;
-    font-weight: bolder;
-    font-size: 20px;
-    transition: 0.3s ease-in-out;
+.sectionSelected {
+  max-height: 45px;
+  padding: 10px 20px;
+  background-color: #1ab7fa;
+  cursor: pointer;
+  box-shadow: 0.5px 0px 3px #1d1d1d;
+  border-radius: 4px;
+  margin-left: 15px;
+  color: #2a2a2a;
+  font-family: Ubuntu, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
 }
 .section:hover {
-    box-shadow: 0px 0px 1px rgb(44, 44, 44);
+  box-shadow: 0px 0px 1px rgb(44, 44, 44);
 }
 .sectionSelected:hover {
-    box-shadow: 0px 0px 1px rgb(44, 44, 44);
+  box-shadow: 0px 0px 1px rgb(44, 44, 44);
 }
 
 .navTitle {
-    color: #2a2a2a;
-    font-family: Ubuntu, sans-serif;
-    font-weight: bolder;
-    font-size: 20px;
+  color: #2a2a2a;
+  font-family: Ubuntu, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
 }
 
 .detailView {
-    margin: 25px 0px 50px 0px;
+  margin: 25px 0px 50px 0px;
 }
 
 .titleDiv {
-    display: flex;
-    justify-content: space-between;    
+  display: flex;
+  justify-content: space-between;
 }
 
 .title {
-    font-family: Ubuntu, sans-serif;
-    margin: 20px 0px;
-    font-size: 22px;
+  font-family: Ubuntu, sans-serif;
+  margin: 20px 0px;
+  font-size: 22px;
 }
 
-
-
 .hide {
-    display: none;
-    animation: hideIt 1s;
-    animation-fill-mode: both;
-    animation-timing-function: linear;
+  display: none;
+  animation: hideIt 1s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
 }
 
 .show {
-    display: block;
-    animation: showIt 1s;
-    animation-fill-mode: both;
-    animation-timing-function: linear;
-
+  display: block;
+  animation: showIt 1s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
 }
 
 @keyframes showIt {

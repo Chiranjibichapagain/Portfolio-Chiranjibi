@@ -2,10 +2,10 @@ import React from "react";
 
 import styles from "./Button.module.css";
 
-const Button = ({ text, type, handleClick }) => {
-  const className = type === undefined ? styles.default : styles[type];
+const Button = ({ text, btnStyle, handleClick, type }) => {
+  const className = btnStyle === undefined ? styles.default : styles[btnStyle];
   return (
-    <button onClick={handleClick} className={className}>{text}</button>
+    <button type={type} onClick={handleClick} className={className}>{text}</button>
   );
 };
 

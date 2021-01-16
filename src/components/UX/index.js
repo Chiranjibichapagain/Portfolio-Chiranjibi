@@ -20,8 +20,8 @@ const UX = () => {
       <h1 className={styles.heading}>UX/UI Projects</h1>  
       <div className={styles.projects}>
         {projects.design.map((project) => (
-          <Link key={project.id}  to= {`/uxprojects/${project.id}`}>
-          <Tile image={Mobile} name={project.title} />
+          <Link className={styles.link} key={project.id}  to= {`/uxprojects/${project.id}`}>
+          <Tile image={project.images[3]} name={project.title} />
           </Link>
         ))}
       </div>
