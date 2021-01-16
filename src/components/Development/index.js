@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import projects from '../../projectData'
 import Tile from '../Tile'
-import Mobile from '../../assets/mobile.png'
 import styles from './Dev.module.css'
 
 const Development = () => {

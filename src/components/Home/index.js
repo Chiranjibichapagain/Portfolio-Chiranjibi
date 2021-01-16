@@ -1,7 +1,6 @@
 import React from "react";
 import {Link} from 'react-scroll'
 
-import Header from "../Header";
 import Banner from "../Banner";
 import Footer from "../Footer";
 import About from "../About";

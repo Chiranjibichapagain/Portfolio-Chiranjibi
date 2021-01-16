@@ -1,4 +1,3 @@
-import image from './assets/super.png'
 import eCom1 from './assets/mocks/e-com_m2.png'
 import eCom2 from './assets/mocks/e-com_d2.png'
 import eCom3 from './assets/mocks/e-com_m1.png'

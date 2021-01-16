@@ -1,7 +1,6 @@
 import React from "react";
 
 import styles from "./About.module.css";
-import Button from "../Button";
 
 const About = () => {
   return (

@@ -5,10 +5,7 @@ import Education from '../Education'
 import Work from '../Work'
 import Trainings from '../Trainings'
 import Skills from '../Skills'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDown} from '@fortawesome/free-solid-svg-icons'
 import styles from './Ux.module.css'
-import classes from './Ux.module.css'
 
 const CV = () => {
     const [edu, setEdu] = useState(true)

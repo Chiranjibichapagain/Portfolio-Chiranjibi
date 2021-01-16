@@ -1,9 +1,7 @@
+/* eslint-disable no-sequences */
 import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUniversity } from '@fortawesome/free-solid-svg-icons'
-import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
-import { faListUl } from '@fortawesome/free-solid-svg-icons'
 import { faSpaceShuttle } from '@fortawesome/free-solid-svg-icons'
 import { faBuilding } from '@fortawesome/free-solid-svg-icons'
 import { faHandPointRight } from '@fortawesome/free-solid-svg-icons'
