@@ -17,10 +17,10 @@ const Contact = () => {
       <div className={styles.formBody}>
       <h2 className={styles.heading}>Contact Form</h2>
         <h5 className={classes.intro}>Please Fill in the form to send me message or feedback.</h5>
-        <form name='contact' method='post' data-netlify='true' className={styles.form}>
+        <form name='contact' method='POST' data-netlify='true' className={styles.form}>
           <Input name='first name' type="text" placeholder="E.g. Your Name" labelText={"First Name"} />
           <Input name='last name' type="text" placeholder="E.g. Your Surname" labelText={"Last Name"} />
-          <Input name='email' type="text" placeholder="E.g. example@example.com" labelText={"Email"} />
+          <Input name='email' type="email" placeholder="E.g. example@example.com" labelText={"Email"} />
           <div className={styles.inputDiv}>
           <label className={styles.label} >Your Message</label>
           <textarea name='message' placeholder="E.g. Your message to me" className={styles.input} cols="30" rows="7" />
