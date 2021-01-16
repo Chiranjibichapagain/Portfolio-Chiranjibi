@@ -28,7 +28,7 @@ const Contact = () => {
     fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...fields })
+            body: encode({ "contact": "contact", ...fields })
           })
             .then(() => alert("Success!"))
             .catch(error => alert(error));
@@ -42,7 +42,7 @@ const Contact = () => {
       <h2 className={styles.heading}>Contact Form</h2>
         <h5 className={classes.intro}>Please Fill in the form to send me message or feedback.</h5>
         <form onSubmit={handleSubmit} name='contact' method='POST' action='/contact-thanks' data-netlify-honeypot="bot-field" id='contact-form' data-netlify='true' className={styles.form}>
-          <input type="hidden" name="form-name" value="contact" />  
+          <input type="hidden" name="contact" value="contact" />  
           <Input value={fields.firstName} handleChange={handleChange} name='firstName' type="text" placeholder="E.g. Your Name" labelText={"First Name"} />
           <Input value={fields.lastName} handleChange={handleChange}  name='lastName' type="text" placeholder="E.g. Your Surname" labelText={"Last Name"} />
           <Input value={fields.email} handleChange={handleChange}  name='email' type="email" placeholder="E.g. example@example.com" labelText={"Email"} />
