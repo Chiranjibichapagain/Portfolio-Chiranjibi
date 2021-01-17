@@ -11,7 +11,6 @@
   font-family: Ubuntu, sans-serif;
   margin-bottom: 1em;
   letter-spacing: 3px;
-
 }
 
 .content {
@@ -30,7 +29,7 @@
 
 @media screen and (max-width: 600px) {
   .main {
-    padding: 1.5em 2em;
+    padding: 1.5em 3em;
   }
 
   .heading {
