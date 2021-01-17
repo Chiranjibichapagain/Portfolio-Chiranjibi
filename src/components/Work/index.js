@@ -25,7 +25,7 @@ const Work=({title, company, location, date, tasks})=> {
             <hr/>
             <div className={styles.tasks}>
                     {tasks.map(items => (
-                        <li className={styles.list}>
+                        <li key={items} className={styles.list}>
                                 <FontAwesomeIcon className={styles.icon} icon={faHandPointRight} />
                                 <p className={styles.courses}>{items}</p>
                             </li>

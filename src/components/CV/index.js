@@ -13,7 +13,6 @@ const CV = () => {
     const [trainings, setTrainings] = useState(false)
     const [skills, setSkills] = useState(false)
 
-
     const handleEdu = () => {
         if (edu === false) {
             setEdu(true)
@@ -21,7 +20,7 @@ const CV = () => {
             setTrainings(false)
             setSkills(false)
         } else {
-            setEdu(false)
+            setEdu(true)
         }
     }
     const handleWork = () => {
@@ -60,16 +59,16 @@ const CV = () => {
             <h1 className={styles.heading}>Curriculum Vitae</h1>
             <div className={styles.sections}>
 
-                <div onClick={handleEdu} className={edu === false ? styles.section : styles.sectionSelected}>
+                <div onClick={()=>handleEdu()} className={edu === false ? styles.section : styles.sectionSelected}>
                     <p>Education </p>
                 </div>
-                <div onClick={handleWork} className={work === false ? styles.section : styles.sectionSelected}>
+                <div onClick={()=>handleWork()} className={work === false ? styles.section : styles.sectionSelected}>
                     <p>Work Experiences </p>
                 </div>
-                <div onClick={handleTrainings} className={trainings === false ? styles.section : styles.sectionSelected}>
+                <div onClick={()=>handleTrainings()} className={trainings === false ? styles.section : styles.sectionSelected}>
                     <p>Trainings </p>
                 </div>
-                <div onClick={handleSkills} className={skills === false ? styles.section : styles.sectionSelected}>
+                <div onClick={()=>handleSkills()} className={skills === false ? styles.section : styles.sectionSelected}>
                     <p>Skills </p>
                 </div>
             </div>
@@ -79,28 +78,28 @@ const CV = () => {
                 <div className={edu === false ? styles.hide : styles.show}>
                     <h3 className={styles.title}>Education</h3>
                     {cvData.education.map((item) => (
-                    <Education degree={item.degree} title={item.title} institute={item.institute} year={item.year} courses={item.courses} />
+                    <Education key={item.title} degree={item.degree} title={item.title} institute={item.institute} year={item.year} courses={item.courses} />
                     ))}
                 </div>
 
                 <div className={work===false?styles.hide:styles.show}>
                     <h3 className={styles.title}>Work Experiences</h3>
                     {cvData.workExperiences.map((item) => (
-                    <Work title={item.title} company={item.company} location={item.location} date={item.date} tasks={item.tasks} />
+                    <Work key={item.title} title={item.title} company={item.company} location={item.location} date={item.date} tasks={item.tasks} />
                     ))}
                 </div>
 
                 <div className={trainings===false?styles.hide:styles.show}>
                     <h3 className={styles.title}>Trainings and Certifications</h3>
                     {cvData.trainings.map((item) => (
-                    <Trainings title={item.title} institute={item.institute} date={item.date} subjects={item.subjects} />
+                    <Trainings key={item.title} title={item.title} institute={item.institute} date={item.date} subjects={item.subjects} />
                     ))}
                 </div>
                
                 <div className={skills===false?styles.hide:styles.show}>
                     <h3 className={styles.title}>Tech Skills</h3>
                     {cvData.skills.tech.map((item) => (
-                    <Skills data= {item} />
+                    <Skills key={item.stack} data= {item} />
                     ))}
                 </div>
             </div>

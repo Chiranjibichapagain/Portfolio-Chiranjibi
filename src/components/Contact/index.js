@@ -14,12 +14,11 @@ const Contact = () => {
         <h5 className={classes.intro}>Please Fill in the form to send me message or feedback.</h5>
         <form name='contact' method='post'  className={styles.form}>
           <input type="hidden" name="form-name" value="contact" />  
-          <Input name='firstName' type="text" placeholder="E.g. Your Name" labelText={"First Name"} />
-          <Input name='lastName' type="text" placeholder="E.g. Your Surname" labelText={"Last Name"} />
-          <Input name='email' type="email" placeholder="E.g. example@example.com" labelText={"Email"} />
+          <Input name='Name' type="text" placeholder="E.g. Your full name" labelText={"First Name"} />
+          <Input name='Email' type="email" placeholder="E.g. example@example.com" labelText={"Email"} />
           <div className={styles.inputDiv}>
           <label className={styles.label} >Your Message</label>
-          <textarea name='message' placeholder="E.g. Your message to me" className={styles.input} cols="30" rows="7" />
+          <textarea name='Message' placeholder="E.g. Your message to me" className={styles.input} cols="30" rows="7" />
           </div>
 
           <div data-netlify-recaptcha='true'></div>
