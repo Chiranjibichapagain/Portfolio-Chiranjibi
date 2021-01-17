@@ -18,38 +18,38 @@ const Contact = () => {
     setValues({...fields, [e.target.name]:[e.target.value]})
   }
 
-  const encode = (data) => {
-        return Object.keys(data)
-            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-            .join("&");
-      }
+  // const encode = (data) => {
+  //       return Object.keys(data)
+  //           .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+  //           .join("&");
+  //     }
 
-  const handleSubmit = (e) => {
-    console.log('submitting!!!')
-    fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...fields })
-          })
-            .then(() => alert("Success!"))
-            .catch(error => alert(error));
+  // const handleSubmit = (e) => {
+  //   console.log('submitting!!!')
+  //   fetch("/", {
+  //           method: "POST",
+  //           headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //           body: encode({ "form-name": "contact", ...fields })
+  //         })
+  //           .then(() => alert("Success!"))
+  //           .catch(error => alert(error));
 
-          e.preventDefault();
-  }
+  //         e.preventDefault();
+  // }
 
   return (
     <div className={styles.contactMain}>
       <div className={styles.formBody}>
       <h2 className={styles.heading}>Contact Form</h2>
         <h5 className={classes.intro}>Please Fill in the form to send me message or feedback.</h5>
-        <form onSubmit={handleSubmit}  className={styles.form}>
-          <input type="hidden" name="contact" value="contact" />  
-          <Input value={fields.firstName} handleChange={handleChange} name='firstName' type="text" placeholder="E.g. Your Name" labelText={"First Name"} />
-          <Input value={fields.lastName} handleChange={handleChange}  name='lastName' type="text" placeholder="E.g. Your Surname" labelText={"Last Name"} />
-          <Input value={fields.email} handleChange={handleChange}  name='email' type="email" placeholder="E.g. example@example.com" labelText={"Email"} />
+        <form name='contact' method='post'  className={styles.form}>
+          <input type="hidden" name="form-name" value="contact" />  
+          <Input value={fields.firstName}  name='firstName' type="text" placeholder="E.g. Your Name" labelText={"First Name"} />
+          <Input value={fields.lastName}   name='lastName' type="text" placeholder="E.g. Your Surname" labelText={"Last Name"} />
+          <Input value={fields.email}   name='email' type="email" placeholder="E.g. example@example.com" labelText={"Email"} />
           <div className={styles.inputDiv}>
           <label className={styles.label} >Your Message</label>
-          <textarea value={fields.message} onChange={handleChange}  name='message' placeholder="E.g. Your message to me" className={styles.input} cols="30" rows="7" />
+          <textarea value={fields.message}  name='message' placeholder="E.g. Your message to me" className={styles.input} cols="30" rows="7" />
           </div>
 
           <div data-netlify-recaptcha='true'></div>
