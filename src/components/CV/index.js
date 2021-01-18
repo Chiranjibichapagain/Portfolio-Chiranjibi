@@ -63,7 +63,7 @@ const CV = () => {
                     <p>Education </p>
                 </div>
                 <div onClick={()=>handleWork()} className={work === false ? styles.section : styles.sectionSelected}>
-                    <p>Work Experiences </p>
+                    <p>Experiences </p>
                 </div>
                 <div onClick={()=>handleTrainings()} className={trainings === false ? styles.section : styles.sectionSelected}>
                     <p>Trainings </p>

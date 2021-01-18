@@ -1,58 +1,75 @@
 .main {
-    background-color: #ffffff;
-    padding:10px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0.5px 0.5px 2px rgb(48, 48, 48);
-    transition: 0.3s ease-in-out;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0.5px 0.5px 2px rgb(48, 48, 48);
+  transition: 0.3s ease-in-out;
 }
 
-.main:hover{
-    box-shadow: 0.2px 0.2px 1px rgb(53, 53, 53);
-
+.main:hover {
+  box-shadow: 0.2px 0.2px 1px rgb(53, 53, 53);
 }
 
-.titleItem{
-    display: flex;
-    margin-bottom: 10px;
+.titleItem {
+  display: flex;
+  margin-bottom: 10px;
 }
 
-.item{
-    display: flex;
-    margin: 15px 0px 0px 50px
-
+.item {
+  display: flex;
+  margin: 15px 0px 0px 50px;
 }
 .icon {
-    margin-right: 15px;
-    font-size: 20px;
-    color:rgb(56, 149, 255)
+  margin-right: 15px;
+  font-size: 20px;
+  color: rgb(56, 149, 255);
 }
 
 .text {
-    font-family: "Zilla Slab", serif;
-
+  font-family: "Zilla Slab", serif;
 }
 
 .organization {
-    padding-top: 10px;
-    letter-spacing: 2px;
+  padding-top: 10px;
+  letter-spacing: 2px;
 }
 .bIcon {
-    margin-right: 15px;
-    font-size: 40px;
-    color:rgb(255, 86, 56)
+  margin-right: 15px;
+  font-size: 40px;
+  color: rgb(255, 86, 56);
 }
 
 .bText {
-    padding-top: 10px;
-    letter-spacing: 2px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Ubuntu, sans-serif;
-
+  padding-top: 10px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Ubuntu, sans-serif;
 }
 .courses {
-    font-style: italic;
-    font-family: "Zilla Slab", serif;
+  font-style: italic;
+  font-family: "Zilla Slab", serif;
+}
 
+@media screen and (max-width: 1024px) {
+  .item {
+    display: flex;
+    margin: 10px 0px 0px 10px;
+  }
+
+  .icon {
+    font-size: 15px;
+  }
+  .bIcon {
+    font-size: 25px;
+  }
+
+  .bText {
+    padding-top: 0;
+  }
+
+  .list {
+    margin: 10px 0px 0px 10px;
+  }
 }
