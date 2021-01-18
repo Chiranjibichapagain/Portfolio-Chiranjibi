@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link} from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -11,11 +11,18 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import styles from "./Home.module.css";
 
 function Home() {
+  const [isNavVisible, setIsNavVisible] = useState(false)
   return (
     <div>
       <main>
-        <FontAwesomeIcon className={styles.navIcon} icon={faBars} />
+        <FontAwesomeIcon onClick={()=>setIsNavVisible(!isNavVisible)} className={styles.navIcon} icon={faBars} />
         <div className={styles.nav}>
+          <div className={styles.navItems}><Link to="about" spy={true} smooth={true} >About Me</Link> </div>
+          <div className={styles.navItems}><Link to="projects" spy={true} smooth={true}>Projects</Link></div>
+          <div className={styles.navItems}><Link to="contact" spy={true} smooth={true}>Contact</Link></div>
+        </div>
+        {/* for small screen */}
+        <div className={isNavVisible? styles.showMobileMenu:styles.hideMobileMenu}>
           <div className={styles.navItems}><Link to="about" spy={true} smooth={true} >About Me</Link> </div>
           <div className={styles.navItems}><Link to="projects" spy={true} smooth={true}>Projects</Link></div>
           <div className={styles.navItems}><Link to="contact" spy={true} smooth={true}>Contact</Link></div>

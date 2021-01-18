@@ -8,10 +8,25 @@
   top: 390px;
   left: 150px;
 }
+.showMobileMenu {
+  width: 120px;
+  height: 100px;
+  background-color: #f2f2f2e1;
+  border-radius: 4px;
+  position: fixed;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.781);
+  top: 50px;
+  left: 10px;
+}
+
+.hideMobileMenu {
+  display: none;
+}
 
 .navIcon {
   display: none;
 }
+
 .navItems {
   width: 120px;
   height: 33px;
@@ -27,7 +42,7 @@
   background-color: rgb(187, 187, 187);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .navIcon {
     display: block;
     position: fixed;

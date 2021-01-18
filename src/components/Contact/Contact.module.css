@@ -62,7 +62,7 @@
   margin-left: 2px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .contactMain {
     padding: 2em;
   }

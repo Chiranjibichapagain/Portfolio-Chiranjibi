@@ -32,17 +32,6 @@
   text-align: start;
 }
 
-@media screen and (max-width: 800px) {
-  .courtosy {
-    padding: 0em 1em 0em 2em;
-    font-size: 1em;
-  }
-
-  .icon {
-    margin: 0em 1em;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .courtosy {
     font-size: 0.7em;

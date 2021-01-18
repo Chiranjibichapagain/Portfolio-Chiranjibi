@@ -17,9 +17,9 @@ const Projects = () => {
     <>
       <div className={styles.projectMain}>
         <h2 className={styles.heading}>Projects</h2>
-        <div className={styles.roleBox}>
-          <div onClick={toUX} className={styles.role}>UX/UI Design</div>
-          <div onClick={toDevelopment} className={styles.role}>Web Development</div>
+        <div className={styles.projectTypes}>
+          <div onClick={toUX} className={styles.project}>UX/UI Design</div>
+          <div onClick={toDevelopment} className={styles.project}>Web Development</div>
         </div>
       </div>
     </>

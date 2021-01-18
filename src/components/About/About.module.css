@@ -27,7 +27,7 @@
   border: 0.05em solid #004d73;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .main {
     padding: 1.5em 3em;
   }
