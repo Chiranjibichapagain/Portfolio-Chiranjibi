@@ -38,7 +38,7 @@ const projects = {
         {
             id:"dev-3",
             title:"JoinMe App",
-            about: "I learned most of the skills i have in Full Stack Web Development on my own. Online courses, youtube video, documentation were my source of information. I have earned my Bachelors degree in Business Management and Masters degree in Public Administration. Both from Finland. After i kinda failed to find a job related to my degrees, i started thinking of alternative career. I was always interested in the filed of IT and i thought of giving it a try. From the beginning of 2020 while Corona Virus was engaging the whole world, so the Web Development did to me.",
+            about: "This is a PERN [Postgres, Express, React, Node] Stack Web application built using TypeScript. This is a group project and a group of 5 students includig me built this project. In this Project we have tried to write follow the process that is industry standard. We manage the project with github project management tool and everyone of us worked as scrum master for atleast 2-weeks long sprint. In this application, a user can login with google and create/ join event created by others. User can also filter events based on the given distance. For more info please visit the app.   ",
             images: [joinme1, joinme2, joinme3],
             link:"https://www.linkedin.com/in/chiranjibi-chapagain-4aa57595/"
         }
@@ -49,30 +49,30 @@ const projects = {
          {
             id:"ux-1",
             title:"Pjoject NRNA",
-            about: "I learned most of the skills i have in Full Stack Web Development on my own. Online courses, youtube video, documentation were my source of information. I have earned my Bachelors degree in Business Management and Masters degree in Public Administration. Both from Finland. After i kinda failed to find a job related to my degrees, i started thinking of alternative career. I was always interested in the filed of IT and i thought of giving it a try. From the beginning of 2020 while Corona Virus was engaging the whole world, so the Web Development did to me.",
+            about: "This is a ongoing huge project. NRNA is a world-wide non-governmental organization that connects Nepalese people living in around 80 countries. This project has 11 components including web portal, membership registration, and online voting system. Designing system for this project was challanging especially becuase of its diverse users and complex membership verification requirement. Moreover user with diverse backround and addressing their country requirement was very challanging. I have designed Both UX and UI of the system. Various round of stakeholders meetings and user research were carried out before the actual diesgn",
             images: [nrna1, nrna2, nrna3, nrna_mbl],
-            link:"https://www.linkedin.com/in/chiranjibi-chapagain-4aa57595/"
+            link:"https://www.figma.com/proto/W4nexXKZqEdxNggLhG2PoK/SMART_NRNA_PROJECT?node-id=11%3A14&viewport=553%2C107%2C0.08662553876638412&scaling=min-zoom"
         },
         {
             id:"ux-2",
             title:"JoinMe Application",
-            about: "I learned most of the skills i have in Full Stack Web Development on my own. Online courses, youtube video, documentation were my source of information. I have earned my Bachelors degree in Business Management and Masters degree in Public Administration. Both from Finland. After i kinda failed to find a job related to my degrees, i started thinking of alternative career. I was always interested in the filed of IT and i thought of giving it a try. From the beginning of 2020 while Corona Virus was engaging the whole world, so the Web Development did to me.",
+            about: "This is a Full Stack Web application. This is a group project and a group of 5 students includig me built this project. UX and UI of this project is mostly done by me where i received some input form other group members as well. As this is an imaginary project, the design is pretty basic and i have tried to make this app clean and simple. As this application foucses on finding people aroud to do sports activities together, youthful ans warm color combination; orange/OrangeRed is used. For hassel-free registation users can register with google account, and they can filter events in the given radius from the given address.   ",
             images: [joinme1, joinme2, joinme3, joinme1],
-            link:"https://www.linkedin.com/in/chiranjibi-chapagain-4aa57595/"
+            link:"https://www.figma.com/proto/MAtneSrLvEXJMx27c15dn8/joinMe?node-id=26%3A147&viewport=716%2C167%2C0.06857454776763916&scaling=min-zoom"
         },
         {
             id:"ux-3",
             title:"InnoEdu Platform",
-            about: "I learned most of the skills i have in Full Stack Web Development on my own. Online courses, youtube video, documentation were my source of information. I have earned my Bachelors degree in Business Management and Masters degree in Public Administration. Both from Finland. After i kinda failed to find a job related to my degrees, i started thinking of alternative career. I was always interested in the filed of IT and i thought of giving it a try. From the beginning of 2020 while Corona Virus was engaging the whole world, so the Web Development did to me.",
+            about: "INNOEDU (Innovative Education Council OY) developes gamified learning materials for primary school students with the vision to help develop the logical thinking skills for primary school students and teach them basics of programming logic, e-learning solution. I started working as an intern in the INNOEDU from mid-December 2019. As this is a startup, there was no senior UX/UI designer who could support my learning. Therefore, i have been designing the UX/UI in the INNOEDU depending on my own knowledge and research. I have been concerntrating mainly on redesigning the company’s website, User registration, and user dashbaord.",
             images: [innoedu1, innoedu2, innoedu3, innoedu_ipad],
-            link:"https://www.linkedin.com/in/chiranjibi-chapagain-4aa57595/"
+            link:"https://www.innoedu.org/Home/Index"
         },
         {
             id:"ux-4",
             title:"The Fire Place",
-            about: "I learned most of the skills i have in Full Stack Web Development on my own. Online courses, youtube video, documentation were my source of information. I have earned my Bachelors degree in Business Management and Masters degree in Public Administration. Both from Finland. After i kinda failed to find a job related to my degrees, i started thinking of alternative career. I was always interested in the filed of IT and i thought of giving it a try. From the beginning of 2020 while Corona Virus was engaging the whole world, so the Web Development did to me.",
+            about: "This is my personal project base on design-thinking solution group work i worked in during my Master's degree. There are two parts in this project. The first part is service design and the second one is the UX/UI design. All of us 8 people were involved in the service design part. Our task was just to reccomend a solution for the given challange. As we came up with a solution that is a digital platform, i decided to work on the UX/UI after the project alone. Therefore, along with significant contribution in the service design process, i have done UX/UI design alone. ",
             images: [fireplace1, fireplace2, fireplace3, fireplace2],
-            link:"https://www.linkedin.com/in/chiranjibi-chapagain-4aa57595/"
+            link:"https://www.figma.com/proto/rAgRNu6KxlIHlRLRYAvXM8/KTH_proj?node-id=8%3A56&viewport=-168%2C1497%2C0.017567496746778488&scaling=scale-down"
         },
     ]
 }

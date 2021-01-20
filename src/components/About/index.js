@@ -7,30 +7,27 @@ const About = () => {
     <div className={styles.main}>
       <h2 className={styles.heading}>About Me</h2>
       <p className={styles.content}>
-        I learned most of the skills i have in Full Stack Web Development on my
-        own. Online courses, youtube video, documentation were my source of
-        information. I have earned my Bachelors degree in Business Management
-        and Masters degree in Public Administration. Both from Finland. After i
-        kinda failed to find a job related to my degrees, i started thinking of
-        alternative career. I was always interested in the filed of IT and i
-        thought of giving it a try. From the beginning of 2020 while Corona
-        Virus was engaging the whole world, so the Web Development did to me.{" "}
+        I am Full-Stack Developer based on Helsinki, Finland. Although i have a background in  
+        Management and administration [Bachelor's Degree in Business Administration and Master's Degree in Public Management],
+        i decided to pursue my career in the field of web development. As i had zero knowledge
+        about web development or almost anything about IT, i started learning HTML, CSS and JavaScript with the help of youtube 
+        tutorials and FreeCodeCamp exercises.
+        {" "}
         <br />
         <br />
-        Diving into a entirely different field was a painful process for me. But
-        i love it when it comes challenging myslef. In about 6 months i learned
+        Diving into a drastically different field was a painful process. However,
+        i love it when it comes to challenge myslef. In about 6 months of starting i learned
         HTML5, CSS3, JavaScript, React, Redux, Node.js, Express.js, MongoDB,
         Testing, and TypeScript. I only have surface knowledge but know how to
         get things done. In addition to this technology, i have knowledge and
         skills in UX and UI Development.
         <br />
         <br />I am currently pursuing a vocational degree in Heslinki Business
-        College. I have also started an intensive Full Web Development training
-        in the Integrify. I am motivated and working hard to become a Full Stack
-        Web Developer in near future.
+        College. I have also recently completed an intensive Full Web Development training
+        in the Integrify. Now i can develop Full-Stack MERN and PERN web applications. I have also developed
+        a foundation, with which i am confident to learn any new technology fast. 
         <br />
-        <br />
-        Want to know more ? check out my CV.
+        If you want to know more about me, kindly visit my CV page by pressing to "Straight to CV " button. 
       </p>
     </div>
   );
