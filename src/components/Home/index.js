@@ -12,6 +12,11 @@ import styles from "./Home.module.css";
 
 function Home() {
   const [isNavVisible, setIsNavVisible] = useState(false)
+
+ const handleClick = () => {
+  setIsNavVisible(false)
+ }
+
   return (
     <div>
       <main>
@@ -23,9 +28,9 @@ function Home() {
         </div>
         {/* for small screen */}
         <div className={isNavVisible? styles.showMobileMenu:styles.hideMobileMenu}>
-          <div className={styles.navItems}><Link to="about" spy={true} smooth={true} >About Me</Link> </div>
-          <div className={styles.navItems}><Link to="projects" spy={true} smooth={true}>Projects</Link></div>
-          <div className={styles.navItems}><Link to="contact" spy={true} smooth={true}>Contact</Link></div>
+          <div  className={styles.navItems}><Link onClick={handleClick} to="about" spy={true} smooth={true} >About Me</Link> </div>
+          <div  className={styles.navItems}><Link onClick={handleClick} to="projects" spy={true} smooth={true}>Projects</Link></div>
+          <div className={styles.navItems}><Link onClick={handleClick} to="contact" spy={true} smooth={true}>Contact</Link></div>
         </div>
         <Banner />
         <div id="about">
