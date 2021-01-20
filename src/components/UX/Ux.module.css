@@ -1,13 +1,12 @@
 .main {
   width: 100vw;
-  height: 100vh;
   padding: 2em 20em 5em 20em;
   font-family: Ubuntu, sans-serif;
   letter-spacing: 2px;
   background-image: url(../../assets/water.jpg);
   background-color: rgb(192, 251, 255);
-  background-attachment: fixed;
   background-size: cover;
+  margin-bottom: 50px;
 }
 .link {
   text-decoration: none;
@@ -44,5 +43,11 @@
 
   .heading {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    padding: 1em;
   }
 }

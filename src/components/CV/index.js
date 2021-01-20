@@ -30,7 +30,7 @@ const CV = () => {
             setTrainings(false)
             setSkills(false)
         } else {
-            setWork(false)
+            setWork(true)
         }
     }
     const handleTrainings = () => {
@@ -40,7 +40,7 @@ const CV = () => {
             setWork(false)
             setSkills(false)
         } else {
-            setTrainings(false)
+            setTrainings(true)
         }
     }
     const handleSkills = () => {
@@ -50,7 +50,7 @@ const CV = () => {
             setWork(false)
             setTrainings(false)
         } else {
-            setSkills(false)
+            setSkills(true)
         }
     }
 

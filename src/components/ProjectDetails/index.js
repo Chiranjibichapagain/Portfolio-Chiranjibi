@@ -9,7 +9,6 @@ import projects from '../../projectData'
 const ProjectDetails = ({ match }) => {
     const id = match.params.id
     const data = id.includes('dev')?projects.dev.find((item) => item.id === id):projects.design.find((item) => item.id === id)
-    console.log('xxx--', data)
     
     const history=useHistory()
     const handleClick = () => {
@@ -31,7 +30,7 @@ const ProjectDetails = ({ match }) => {
                 <div className={styles.textDiv}>
                     <h3 className={styles.subHead}>{data.title}</h3>
                     <p className={styles.texts} >{data.about }</p>
-                    <a href={data.link} target="blank"><button className={styles.button} >view app</button></a>
+                    <a className={styles.btnWrapper} href={data.link} target="blank"><button className={styles.button} >view app</button></a>
                 </div>
             </div>
             <hr className={styles.lines}/>
