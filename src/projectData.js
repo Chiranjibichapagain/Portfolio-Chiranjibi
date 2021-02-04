@@ -42,7 +42,7 @@ const projects = {
             title:"JoinMe App",
             about: "This is a PERN [Postgres, Express, React, Node] Stack Web application built using TypeScript. This is a group project and a group of 5 students includig me built this project. In this Project we have tried to write follow the process that is industry standard. We manage the project with github project management tool and everyone of us worked as scrum master for atleast 2-weeks long sprint. In this application, a user can login with google and create/ join event created by others. User can also filter events based on the given distance. For more info please visit the app. THIS PROJECT IS UNDER CONSTRUCTION!  ",
             images: [joinme1, joinme2, joinme3],
-            link: "https://www.linkedin.com/in/chiranjibi-chapagain-4aa57595/",
+            link: "https://joinme-integrify.herokuapp.com/get-started",
             github:"https://joinme-integrify.herokuapp.com/"
         }
         
