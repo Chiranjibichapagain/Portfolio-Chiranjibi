@@ -4,6 +4,7 @@ import {useHistory} from 'react-router-dom'
 import styles from './ProjectDetails.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import projects from '../../projectData'
 
 const ProjectDetails = ({ match }) => {
@@ -29,12 +30,17 @@ const ProjectDetails = ({ match }) => {
                 </div>
                 <div className={styles.textDiv}>
                     <h3 className={styles.subHead}>{data.title}</h3>
-                    <p className={styles.texts} >{data.about }</p>
+                    <p className={styles.texts} >{data.about}</p>
+                    <div className={styles.actionWrapper}>
+                        <a className={data.id.includes('dev')?styles.btnWrapper:styles.hideGit} href={data.github} target="blank">
+                         <FontAwesomeIcon onClick={handleClick} className={styles.github} icon={faGithub} />
+                        </a>
                     <a className={styles.btnWrapper} href={data.link} target="blank"><button className={styles.button} >view app</button></a>
+                    </div>
                 </div>
             </div>
             <hr className={styles.lines}/>
-            <div className={styles.block}>
+            <div className={styles.block2}>
                 <div className={styles.imgDiv2}>
                     <img className={styles.image2} src={data.images[1]} alt="phone" />
                 </div>

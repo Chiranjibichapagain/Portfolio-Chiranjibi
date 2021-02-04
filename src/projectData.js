@@ -26,21 +26,24 @@ const projects = {
             title:"E-commerce Website",
             about: "This is a MERN (MongoDB, Express, React, Node) stack project. This is a demo project i did to sharpen my skill in Full-Stack technologies. I did this project using Typescript. Technologies and libraries such as Redux, Google Authentication, Material UI, Context API are also used in this project. Features of this projects includes CRUD operations for user and product, google login, password reset, Admin roles (bann user, give user roles), add product to cart and checkout. The server side of the application is deployed in the Heroku and client side in the Netlify.",
             images: [eCom1, eCom2, eCom3],
-            link:"https://e-commerce-proj.netlify.app/"
+            link: "https://e-commerce-proj.netlify.app/",
+            github:"https://github.com/Chiranjibichapagain/MERN-stack-e-commerce-APP"
         },
         {
             id:"dev-2",
             title:"Contact-list App",
             about:"This is a React app. I did this project to brush my skills in JavaScript, React, Css etc. In this project i have used built CRUD (Create, Read, Update, Delete) functionalities. As this project hasn't used database, so i have setup the local storage to save the user's data. The page is fully responsive to various devices.",
             images: [contact1, contact2, contact3],
-            link:"https://chiranjibi-contact-app.netlify.app/"
+            link: "https://chiranjibi-contact-app.netlify.app/",
+            github: "https://github.com/Chiranjibichapagain/Contact-list-app"
         },
         {
             id:"dev-3",
             title:"JoinMe App",
             about: "This is a PERN [Postgres, Express, React, Node] Stack Web application built using TypeScript. This is a group project and a group of 5 students includig me built this project. In this Project we have tried to write follow the process that is industry standard. We manage the project with github project management tool and everyone of us worked as scrum master for atleast 2-weeks long sprint. In this application, a user can login with google and create/ join event created by others. User can also filter events based on the given distance. For more info please visit the app. THIS PROJECT IS UNDER CONSTRUCTION!  ",
             images: [joinme1, joinme2, joinme3],
-            link:"https://www.linkedin.com/in/chiranjibi-chapagain-4aa57595/"
+            link: "https://www.linkedin.com/in/chiranjibi-chapagain-4aa57595/",
+            github:"https://joinme-integrify.herokuapp.com/"
         }
         
     ],
