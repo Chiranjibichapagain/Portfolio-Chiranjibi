@@ -14,6 +14,8 @@ import typeScript from './assets/typescript-icon.svg'
 import expressJs from './assets/express.svg'
 import restApi from './assets/restApi.svg'
 import mongoDB from './assets/mongo.svg'
+import mariaDB from './assets/mariaDB.svg'
+import mySql from './assets/mysql.svg'
 import postgreSql from './assets/postgresql.svg'
 import cypress from './assets/cypress.svg'
 import jest from './assets/jest.svg'
@@ -220,6 +222,16 @@ const cv = {
                     {
                         tech: "PostgreSQL",
                         icon:postgreSql,
+                        type:"image"
+                    },
+                    {
+                        tech: "MySQL",
+                        icon:mySql,
+                        type:"image"
+                    },
+                    {
+                        tech: "MariaDB",
+                        icon:mariaDB,
                         type:"image"
                     },
                 ]
