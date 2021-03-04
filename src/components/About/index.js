@@ -11,21 +11,22 @@ const About = () => {
         Management and administration [Bachelor's Degree in Business Administration and Master's Degree in Public Management],
         i decided to pursue my career in the field of web development. As i had zero knowledge
         about web development or almost anything about IT, i started learning HTML, CSS and JavaScript with the help of youtube 
-        tutorials and FreeCodeCamp exercises.
+        tutorials, technology documentations, and online courses.
         {" "}
         <br />
         <br />
         Diving into a drastically different field was a painful process. However,
-        i love it when it comes to challenge myslef. In about 6 months of starting i learned
-        HTML5, CSS3, JavaScript, React, Redux, Node.js, Express.js, MongoDB,
-        Testing, and TypeScript. I only have surface knowledge but know how to
-        get things done. In addition to this technology, i have knowledge and
-        skills in UX and UI Development.
+        i always love challanges. Along with the development i am keen on designing user-centric digital products. 
+        I have good UX and UI design skill. At the front-end side, i am a proficient in techs such as HTML5, CSS3, SCSS, JavaScript, React, Redux, and TypeScript. 
+        At the back-end side i am profecient in Node.js and express. I can use both NoSQL (MongoDB) and SQL (MariaDB, mySQl, PostreSQL) databases. I also have some knowledge
+        of Docker, CI/CD and gitHub actions. Unit Testing with Jest and Cypress is another skill-set i possess. 
+        In terms of the design, i am profecient user of UI design tool Figma and adobeXD. I also have knowldege of UX design processes such as research, analysis, design and validation. 
         <br />
         <br />I am currently pursuing a vocational degree in Heslinki Business
-        College. I have also recently completed an intensive Full Web Development training
-        in the Integrify. Now i can develop Full-Stack MERN and PERN web applications. I have also developed
-        a foundation, with which i am confident to learn any new technology fast. 
+        College. I have also recently completed an intensive Full-Stack Web Development training
+        in the Integrify Academy. I also have completed open university course by Helsinki University on Full-stack. Currently i am learning GraphQl and React-native on my own. 
+        After more than a year of hard wrok, today, i am confident to develop Full-Stack applications uisng afformentioned technologies. 
+        I have also developed a foundation, with which i am confident to learn any new technology fast. 
         <br />
         If you want to know more about me, kindly visit my CV page by pressing to "Straight to CV " button. 
       </p>
