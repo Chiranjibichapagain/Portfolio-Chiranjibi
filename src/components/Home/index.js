@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Link} from 'react-scroll'
+import ScrollableAnchor from 'react-scrollable-anchor'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Banner from "../Banner";
@@ -22,26 +22,32 @@ function Home() {
       <main>
         <FontAwesomeIcon onClick={()=>setIsNavVisible(!isNavVisible)} className={styles.navIcon} icon={faBars} />
         <div className={styles.nav}>
-          <div className={styles.navItems}><Link to="about" spy={true} smooth={true} >About Me</Link> </div>
-          <div className={styles.navItems}><Link to="projects" spy={true} smooth={true}>Projects</Link></div>
-          <div className={styles.navItems}><Link to="contact" spy={true} smooth={true}>Contact</Link></div>
+          <div className={styles.navItems}><a href="#about" >About Me</a></div>
+          <div className={styles.navItems}><a href="#projects" >Projects</a></div>
+          <div className={styles.navItems}><a href="#contact" >Contact</a></div>
         </div>
         {/* for small screen */}
         <div className={isNavVisible? styles.showMobileMenu:styles.hideMobileMenu}>
-          <div  className={styles.navItems}><Link onClick={handleClick} to="about" spy={true} smooth={true} >About Me</Link> </div>
-          <div  className={styles.navItems}><Link onClick={handleClick} to="projects" spy={true} smooth={true}>Projects</Link></div>
-          <div className={styles.navItems}><Link onClick={handleClick} to="contact" spy={true} smooth={true}>Contact</Link></div>
+          <div  className={styles.navItems}><a onClick={handleClick} href="#about" >About Me</a> </div>
+          <div  className={styles.navItems}><a onClick={handleClick} href="#projects" >Projects</a></div>
+          <div className={styles.navItems}><a onClick={handleClick} href="#contact" >Contact</a></div>
         </div>
         <Banner />
-        <div id="about">
-        <About />
-        </div>
-        <div id="projects">
-        <Projects />
-        </div>
-        <div id="contact">
-        <Contact />
-        </div>
+        <ScrollableAnchor id={"about"}>
+          <div id="about">
+            <About />
+          </div>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={"projects"}>
+          <div id="projects">
+            <Projects />
+          </div>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={"contact"}>
+          <div id="contact">
+            <Contact />
+          </div>
+        </ScrollableAnchor>
       </main>
       <Footer />
     </div>

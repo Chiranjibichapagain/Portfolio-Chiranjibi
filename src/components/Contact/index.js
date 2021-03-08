@@ -3,15 +3,13 @@ import React from "react";
 import Input from '../Input/'
 import Button from '../Button'
 import styles from "./Contact.module.css";
-import classes from "./Contact.module.css";
-
 
 const Contact = () => {
   return (
     <div className={styles.contactMain}>
       <div className={styles.formBody}>
       <h2 className={styles.heading}>Contact Form</h2>
-        <h5 className={classes.intro}>Please Fill in the form to send me a message.</h5>
+        <h5 className={styles.intro}>Please Fill in the form to send me a message.</h5>
         <form name='contact' method='post'  className={styles.form}>
           <input type="hidden" name="form-name" value="contact" />  
           <Input name='Name' type="text" placeholder="E.g. Your full name" labelText={"First Name"} />
