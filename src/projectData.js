@@ -18,6 +18,9 @@ import innoedu_ipad from './assets/mocks/innodeu_ipad.png'
 import fireplace1 from './assets/mocks/fireplace1.png'
 import fireplace2 from './assets/mocks/fireplace2.png'
 import fireplace3 from './assets/mocks/fireplace3.png'
+import quiz1 from './assets/mocks/quiz-mbl.png'
+import quiz2 from './assets/mocks/quiz-tab.png'
+import quiz3 from './assets/mocks/quiz-desk.png'
 
 const projects = {
     dev: [
@@ -32,9 +35,9 @@ const projects = {
         {
             id:"dev-4",
             title:"Random Quiz Application",
-            about: "his is a quiz application. The quiz questions and answers are fetched from Open Trivia DB. Query parameters (numbers of questions, category, difficulty level and question type) are dynamically set with the user input and the quiz is generated autometically. User can anser the quiz by clicking the option: after an user selects an answe, answer will be checked and the right answers turns into green and wrong into red. next questions will be automatically loaded after 3s and at the end the final result data will be presented with pia chart. User should logged in to use this app.",
-            images: [eCom1, eCom2, eCom3],
-            link: "https://e-commerce-proj.netlify.app/",
+            about: "This is a quiz application. The quiz questions and answers are fetched from Open Trivia DB. Query parameters (numbers of questions, category, difficulty level and question type) are dynamically set with the user input and the quiz is generated autometically. User can anser the quiz by clicking the option: after an user selects an answe, answer will be checked and the right answers turns into green and wrong into red. next questions will be automatically loaded after 3s and at the end the final result data will be presented with pia chart. User should logged in to use this app.",
+            images: [quiz1, quiz2, quiz3],
+            link: "https://quizz-random.netlify.app/",
             github:"https://github.com/Chiranjibichapagain/MERN-stack-e-commerce-APP"
         },
         {
