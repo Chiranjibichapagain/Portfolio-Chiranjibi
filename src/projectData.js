@@ -30,12 +30,12 @@ const projects = {
             github:"https://github.com/Chiranjibichapagain/MERN-stack-e-commerce-APP"
         },
         {
-            id:"dev-2",
-            title:"Contact-list App",
-            about:"This is a React app. I did this project to brush my skills in JavaScript, React, Css etc. In this project i have used built CRUD (Create, Read, Update, Delete) functionalities. As this project hasn't used database, so i have setup the local storage to save the user's data. The page is fully responsive to various devices.",
-            images: [contact1, contact2, contact3],
-            link: "https://chiranjibi-contact-app.netlify.app/",
-            github: "https://github.com/Chiranjibichapagain/Contact-list-app"
+            id:"dev-4",
+            title:"Random Quiz Application",
+            about: "his is a quiz application. The quiz questions and answers are fetched from Open Trivia DB. Query parameters (numbers of questions, category, difficulty level and question type) are dynamically set with the user input and the quiz is generated autometically. User can anser the quiz by clicking the option: after an user selects an answe, answer will be checked and the right answers turns into green and wrong into red. next questions will be automatically loaded after 3s and at the end the final result data will be presented with pia chart. User should logged in to use this app.",
+            images: [eCom1, eCom2, eCom3],
+            link: "https://e-commerce-proj.netlify.app/",
+            github:"https://github.com/Chiranjibichapagain/MERN-stack-e-commerce-APP"
         },
         {
             id:"dev-3",
@@ -44,7 +44,15 @@ const projects = {
             images: [joinme1, joinme2, joinme3],
             link: "https://joinme-integrify.herokuapp.com/get-started",
             github:"https://joinme-integrify.herokuapp.com/"
-        }
+        },
+        {
+            id:"dev-2",
+            title:"Contact-list App",
+            about:"This is a React app. I did this project to brush my skills in JavaScript, React, Css etc. In this project i have used built CRUD (Create, Read, Update, Delete) functionalities. As this project hasn't used database, so i have setup the local storage to save the user's data. The page is fully responsive to various devices.",
+            images: [contact1, contact2, contact3],
+            link: "https://chiranjibi-contact-app.netlify.app/",
+            github: "https://github.com/Chiranjibichapagain/Contact-list-app"
+        },
         
     ],
 
