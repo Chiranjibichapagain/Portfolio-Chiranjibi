@@ -12,6 +12,12 @@
   margin-bottom: 1em;
   letter-spacing: 3px;
 }
+
+.texts {
+  font-family: "Zilla Slab", serif;
+  font-size: 1.4em;
+  line-height: 1.5;
+}
 .projectTypes {
   display: flex;
   justify-content: space-between;
