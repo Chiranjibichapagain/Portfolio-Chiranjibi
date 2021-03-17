@@ -1,17 +1,24 @@
 .banner {
   box-sizing: border-box;
   width: 100vw;
-  padding: 4em 10em;
+  padding: 2em 0em 4em 25em;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  color: #dbebfa;
+  color: #808183;
   text-align: center;
   font-family: Ubuntu, sans-serif;
   letter-spacing: 0.1em;
   animation: bannerMagic 0.5s;
   animation-fill-mode: both;
   animation-timing-function: linear;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  width: 300px;
+  border-radius: 120px 0px 0px 0px;
 }
 
 .greetings {
