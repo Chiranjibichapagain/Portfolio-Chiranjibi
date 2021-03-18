@@ -1,7 +1,7 @@
 .banner {
   box-sizing: border-box;
   width: 100vw;
-  padding: 2em 0em 4em 25em;
+  padding: 2em 0em 0em 25em;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -14,10 +14,12 @@
   animation-timing-function: linear;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .profile {
-  width: 335px;
+  width: 350px;
+  min-height: 100%;
   border-radius: 120px 0px 0px 0px;
 }
 
@@ -131,9 +133,16 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (width: 1024px) {
   .banner {
-    padding: 1em 1.5em;
+    /* padding: 1em 1.5em 0em 1.5em; */
+    animation: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    padding: 1em 1.5em 0em 1.5em;
     animation: none;
     flex-direction: column;
   }

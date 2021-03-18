@@ -59,9 +59,7 @@ const Banner = () => {
         </p>
         <button onClick={toCV} className={styles.button} >Straight to CV</button>
       </div>
-      <div>
         <img className={styles.profile} src={profilePicture} alt='Profile'/>
-      </div>
     </div>
   );
 };
