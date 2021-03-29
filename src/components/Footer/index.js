@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import styles from "./Footer.module.css";
-import linkedin from "../../assets/linkedin.svg";
-import github from "../../assets/github.svg";
-import twitter from "../../assets/twitter.svg";
+import styles from './Footer.module.css';
+import linkedin from '../../assets/linkedin.svg';
+import github from '../../assets/github.svg';
+import twitter from '../../assets/twitter.svg';
 
 const Footer = () => {
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
         <a href="https://github.com/Chiranjibichapagain">
           <img className={styles.icon} src={github} alt="Github icon" />
         </a>
-        <a href="https://github.com/Chiranjibichapagain">
+        <a href="https://twitter.com/Asaamaajik">
           <img className={styles.icon} src={twitter} alt="Twitter icon" />
         </a>
       </div>
